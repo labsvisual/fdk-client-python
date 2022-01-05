@@ -1,0 +1,21 @@
+"""Platform Models."""
+
+from marshmallow import fields, Schema
+from marshmallow.validate import OneOf
+from ..enums import *
+from ..models.BaseSchema import BaseSchema
+
+
+
+
+
+
+class Ownership(BaseSchema):
+    # Cart swagger.json
+
+    
+    payable_by = fields.Str(required=False)
+    
+    payable_category = fields.Str(required=False)
+    
+
