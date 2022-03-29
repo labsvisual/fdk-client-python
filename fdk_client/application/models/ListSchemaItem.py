@@ -16,7 +16,7 @@ class ListSchemaItem(BaseSchema):
     # Theme swagger.json
 
     
-    global_detail = fields.Dict(required=False)
+    global_config = fields.Dict(required=False)
     
     page = fields.List(fields.Nested(ConfigPage, required=False), required=False)
     

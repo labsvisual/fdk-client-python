@@ -22,8 +22,8 @@ class BulkProductRequest(BaseSchema):
     
     template_tag = fields.Str(required=False)
     
-    company_id = fields.Int(required=False)
-    
     data = fields.List(fields.Dict(required=False), required=False)
+    
+    company_id = fields.Int(required=False)
     
 

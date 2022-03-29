@@ -222,7 +222,7 @@ Get Subscribers By ExtensionID
 
 
 
-[SubscriberResponse](#SubscriberResponse)
+[SubscriberConfigList](#SubscriberConfigList)
 
 Success
 
@@ -331,7 +331,7 @@ Get All Webhook Events
 
 
 
-[EventConfigList](#EventConfigList)
+[EventConfigResponse](#EventConfigResponse)
 
 Success
 
@@ -386,6 +386,17 @@ Success
  | ---------- | ---- | -------- | ----------- |
  | items | ArrayList<[EventConfig](#EventConfig)>? |  yes  |  |
  | page | [Page](#Page)? |  yes  |  |
+
+---
+
+
+ 
+ 
+ #### [EventConfigResponse](#EventConfigResponse)
+
+ | Properties | Type | Nullable | Description |
+ | ---------- | ---- | -------- | ----------- |
+ | eventConfigs | ArrayList<[EventConfig](#EventConfig)>? |  yes  |  |
 
 ---
 
@@ -464,6 +475,7 @@ Success
  | name | String? |  yes  |  |
  | webhookUrl | String? |  yes  |  |
  | association | [Association](#Association)? |  yes  |  |
+ | customHeaders | HashMap<String,Any>? |  yes  |  |
  | status | [SubscriberStatus](#SubscriberStatus)? |  yes  |  |
  | emailId | String? |  yes  |  |
  | authMeta | [AuthMeta](#AuthMeta)? |  yes  |  |
@@ -482,6 +494,7 @@ Success
  | name | String? |  yes  |  |
  | webhookUrl | String? |  yes  |  |
  | association | [Association](#Association)? |  yes  |  |
+ | customHeaders | HashMap<String,Any>? |  yes  |  |
  | emailId | String? |  yes  |  |
  | status | [SubscriberStatus](#SubscriberStatus)? |  yes  |  |
  | authMeta | [AuthMeta](#AuthMeta)? |  yes  |  |
@@ -532,6 +545,20 @@ Success
 ---
 
 
+ 
+ 
+ #### [EventConfigBase](#EventConfigBase)
+
+ | Properties | Type | Nullable | Description |
+ | ---------- | ---- | -------- | ----------- |
+ | eventName | String? |  yes  |  |
+ | eventType | String? |  yes  |  |
+ | eventCategory | String? |  yes  |  |
+ | version | String? |  yes  |  |
+
+---
+
+
 
 
 ### Enums
@@ -547,6 +574,7 @@ Success
  | ---- | ----- | ----------- |
  | active | active | Status is active |
  | inactive | inactive | Status is inactive |
+ | blocked | blocked | Subscriber is blocked by system due to multiple failed delivery attempts. |
 
 ---
 

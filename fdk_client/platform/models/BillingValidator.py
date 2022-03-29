@@ -7,6 +7,15 @@ from ..models.BaseSchema import BaseSchema
 
 class BillingValidator:
     
+    class checkCouponValidity(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        plan = fields.Str(required=False)
+        
+        coupon_code = fields.Str(required=False)
+         
+    
     class createSubscriptionCharge(BaseSchema):
         
         company_id = fields.Str(required=False)

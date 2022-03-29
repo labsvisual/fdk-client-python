@@ -204,6 +204,20 @@ class CommunicationValidator:
         id = fields.Str(required=False)
          
     
+    class sendCommunicationSynchronously(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+         
+    
+    class sendCommunicationAsynchronously(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+         
+    
     class getEventSubscriptions(BaseSchema):
         
         company_id = fields.Str(required=False)

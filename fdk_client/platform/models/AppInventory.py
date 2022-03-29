@@ -15,6 +15,8 @@ from .InventoryStoreRule import InventoryStoreRule
 
 
 
+
+
 from .InventoryPaymentConfig import InventoryPaymentConfig
 
 from .InventoryArticleAssignment import InventoryArticleAssignment
@@ -33,6 +35,8 @@ class AppInventory(BaseSchema):
     franchise_enabled = fields.Boolean(required=False)
     
     out_of_stock = fields.Boolean(required=False)
+    
+    only_verified_products = fields.Boolean(required=False)
     
     payment = fields.Nested(InventoryPaymentConfig, required=False)
     

@@ -11,7 +11,7 @@ from ..models.BaseSchema import BaseSchema
 
 
 class ApplicationMeta(BaseSchema):
-    # Configuration swagger.json
+    # Common swagger.json
 
     
     name = fields.Str(required=False)

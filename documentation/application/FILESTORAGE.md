@@ -8,6 +8,7 @@
 File Storage
 * [startUpload](#startupload)
 * [completeUpload](#completeupload)
+* [signUrls](#signurls)
 
 
 
@@ -139,6 +140,62 @@ This operation will return the URL of the uploaded file.
 
 
 [CompleteResponse](#CompleteResponse)
+
+Success
+
+
+
+
+<details>
+<summary><i>&nbsp; Example:</i></summary>
+
+```json
+
+```
+</details>
+
+
+
+
+
+
+
+
+
+---
+
+
+### signUrls
+Explain here
+
+
+
+
+```python
+try:
+    result = await client.filestorage.signUrls(body=body)
+    # use result
+except Exception as e:
+    print(e)
+```
+
+
+
+
+
+| Argument  |  Type  | Required | Description |
+| --------- | -----  | -------- | ----------- |
+| body | [SignUrlRequest](#SignUrlRequest) | yes | Request body |
+
+
+Describe here
+
+*Returned Response:*
+
+
+
+
+[SignUrlResponse](#SignUrlResponse)
 
 Success
 

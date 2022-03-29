@@ -17,6 +17,8 @@ from .Association import Association
 
 
 
+
+
 from .AuthMeta import AuthMeta
 
 
@@ -33,6 +35,8 @@ class SubscriberConfig(BaseSchema):
     webhook_url = fields.Str(required=False)
     
     association = fields.Nested(Association, required=False)
+    
+    custom_headers = fields.Dict(required=False)
     
     status = fields.Str(required=False, validate=OneOf([val.value for val in SubscriberStatus.__members__.values()]))
     

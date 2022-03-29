@@ -96,6 +96,8 @@ class ConfigurationValidator:
         
         application_id = fields.Str(required=False)
         
+        uid = fields.Int(required=False)
+        
         page_no = fields.Int(required=False)
         
         page_size = fields.Int(required=False)

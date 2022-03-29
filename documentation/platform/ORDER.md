@@ -10,7 +10,7 @@ Handles Platform websites OMS
 * [activityStatus](#activitystatus)
 * [storeProcessShipmentUpdate](#storeprocessshipmentupdate)
 * [checkRefund](#checkrefund)
-* [ShipmentBagsCanBreak](#shipmentbagscanbreak)
+* [shipmentBagsCanBreak](#shipmentbagscanbreak)
 * [getOrdersByCompanyId](#getordersbycompanyid)
 * [getOrderLanesCountByCompanyId](#getorderlanescountbycompanyid)
 * [getOrderDetails](#getorderdetails)
@@ -261,7 +261,7 @@ Success
 ---
 
 
-### ShipmentBagsCanBreak
+### shipmentBagsCanBreak
 Decides if Shipment bags can break
 
 
@@ -269,7 +269,7 @@ Decides if Shipment bags can break
 
 ```python
 try:
-    result = await client.order.ShipmentBagsCanBreak(body=body)
+    result = await client.order.shipmentBagsCanBreak(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2622,6 +2622,7 @@ Success
  | createdAt | String? |  yes  |  |
  | totalShipmentsInOrder | Int? |  yes  |  |
  | payments | [ItemsPayments](#ItemsPayments)? |  yes  |  |
+ | paymentMethods | HashMap<String,Any>? |  yes  |  |
 
 ---
 
@@ -2663,6 +2664,7 @@ Success
  | breakupValues | [ShipmentBreakupValues](#ShipmentBreakupValues)? |  yes  |  |
  | id | String? |  yes  |  |
  | dpDetails | [DpDetails](#DpDetails)? |  yes  |  |
+ | paymentMethods | HashMap<String,Any>? |  yes  |  |
  | invoice | [ShipmentInvoice](#ShipmentInvoice)? |  yes  |  |
  | fulfillingStore | [PlatformFulfillingStore](#PlatformFulfillingStore)? |  yes  |  |
  | payments | [Payments](#Payments)? |  yes  |  |
@@ -2728,6 +2730,9 @@ Success
  | updateTime | Int? |  yes  |  |
  | currentStatus | [BagCurrentStatus](#BagCurrentStatus)? |  yes  |  |
  | bagStatus | [BagStatus](#BagStatus)? |  yes  |  |
+ | canCancel | Boolean? |  yes  |  |
+ | canReturn | Boolean? |  yes  |  |
+ | paymentMethods | HashMap<String,Any>? |  yes  |  |
 
 ---
 
@@ -3426,6 +3431,7 @@ Success
  | createdAt | String? |  yes  |  |
  | totalShipmentsInOrder | Int? |  yes  |  |
  | payments | [ItemsPayments](#ItemsPayments)? |  yes  |  |
+ | paymentMethods | HashMap<String,Any>? |  yes  |  |
 
 ---
 

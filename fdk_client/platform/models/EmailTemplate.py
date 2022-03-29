@@ -31,8 +31,6 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-
-
 from .TemplateAndType import TemplateAndType
 
 from .TemplateAndType import TemplateAndType
@@ -77,8 +75,6 @@ class EmailTemplate(BaseSchema):
     slug = fields.Str(required=False)
     
     name = fields.Str(required=False)
-    
-    from_ = fields.Str(required=False)
     
     from_name = fields.Str(required=False)
     

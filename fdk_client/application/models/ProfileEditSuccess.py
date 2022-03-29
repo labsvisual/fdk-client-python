@@ -22,11 +22,15 @@ from .UserSchema import UserSchema
 
 
 
+
+
 class ProfileEditSuccess(BaseSchema):
     # User swagger.json
 
     
     user = fields.Nested(UserSchema, required=False)
+    
+    resend_email_token = fields.Str(required=False)
     
     register_token = fields.Str(required=False)
     

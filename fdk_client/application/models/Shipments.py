@@ -13,6 +13,10 @@ from .BreakupValues import BreakupValues
 
 
 
+
+
+
+
 from .TrackingDetails import TrackingDetails
 
 
@@ -69,6 +73,10 @@ class Shipments(BaseSchema):
     track_url = fields.Str(required=False)
     
     traking_no = fields.Str(required=False)
+    
+    awb_no = fields.Str(required=False)
+    
+    dp_name = fields.Str(required=False)
     
     tracking_details = fields.List(fields.Nested(TrackingDetails, required=False), required=False)
     

@@ -1357,7 +1357,7 @@ Application inventory enabled companies
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.getAppCompanies(pageNo=pageNo, pageSize=pageSize)
+    result = await client.application("<APPLICATION_ID>").configuration.getAppCompanies(uid=uid, pageNo=pageNo, pageSize=pageSize)
     # use result
 except Exception as e:
     print(e)
@@ -1369,6 +1369,7 @@ except Exception as e:
 
 | Argument  |  Type  | Required | Description |
 | --------- | -----  | -------- | ----------- | 
+| uid | Int? | no | uid of companies to be fetched |   
 | pageNo | Int? | no | Current page no |   
 | pageSize | Int? | no | Current request items count |  
 
@@ -4847,6 +4848,7 @@ Success
  | price | [InventoryPrice](#InventoryPrice)? |  yes  |  |
  | discount | [InventoryDiscount](#InventoryDiscount)? |  yes  |  |
  | outOfStock | Boolean? |  yes  |  |
+ | onlyVerifiedProducts | Boolean? |  yes  |  |
  | franchiseEnabled | Boolean? |  yes  |  |
  | excludeCategory | ArrayList<Any>? |  yes  |  |
  | image | ArrayList<String>? |  yes  |  |
@@ -5842,6 +5844,7 @@ Success
  | image | ArrayList<String>? |  yes  |  |
  | franchiseEnabled | Boolean? |  yes  |  |
  | outOfStock | Boolean? |  yes  |  |
+ | onlyVerifiedProducts | Boolean? |  yes  |  |
  | payment | [InventoryPaymentConfig](#InventoryPaymentConfig)? |  yes  |  |
  | articleAssignment | [InventoryArticleAssignment](#InventoryArticleAssignment)? |  yes  |  |
 

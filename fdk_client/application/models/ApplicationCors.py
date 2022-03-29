@@ -9,7 +9,7 @@ from ..models.BaseSchema import BaseSchema
 
 
 class ApplicationCors(BaseSchema):
-    # Configuration swagger.json
+    # Common swagger.json
 
     
     domains = fields.List(fields.Str(required=False), required=False)

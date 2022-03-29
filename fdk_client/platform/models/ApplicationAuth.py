@@ -9,7 +9,7 @@ from ..models.BaseSchema import BaseSchema
 
 
 class ApplicationAuth(BaseSchema):
-    # Configuration swagger.json
+    # Common swagger.json
 
     
     enabled = fields.Boolean(required=False)

@@ -9,7 +9,7 @@ from ..models.BaseSchema import BaseSchema
 
 
 class NotFound(BaseSchema):
-    # Configuration swagger.json
+    # Common swagger.json
 
     
     message = fields.Str(required=False)

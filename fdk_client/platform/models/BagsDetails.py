@@ -28,6 +28,12 @@ from .BagCurrentStatus import BagCurrentStatus
 from .BagStatus import BagStatus
 
 
+
+
+
+
+
+
 class BagsDetails(BaseSchema):
     # Order swagger.json
 
@@ -53,5 +59,11 @@ class BagsDetails(BaseSchema):
     current_status = fields.Nested(BagCurrentStatus, required=False)
     
     bag_status = fields.Nested(BagStatus, required=False)
+    
+    can_cancel = fields.Boolean(required=False)
+    
+    can_return = fields.Boolean(required=False)
+    
+    payment_methods = fields.Dict(required=False)
     
 

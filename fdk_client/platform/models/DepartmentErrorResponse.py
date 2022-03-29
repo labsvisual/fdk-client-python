@@ -22,9 +22,9 @@ class DepartmentErrorResponse(BaseSchema):
     
     errors = fields.Dict(required=False)
     
-    message = fields.Str(required=False)
-    
     code = fields.Str(required=False)
+    
+    message = fields.Str(required=False)
     
     status = fields.Int(required=False)
     

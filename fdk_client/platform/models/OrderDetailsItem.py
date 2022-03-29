@@ -30,6 +30,8 @@ from .PlatformShipmentDetails import PlatformShipmentDetails
 from .ItemsPayments import ItemsPayments
 
 
+
+
 class OrderDetailsItem(BaseSchema):
     # Order swagger.json
 
@@ -57,5 +59,7 @@ class OrderDetailsItem(BaseSchema):
     total_shipments_in_order = fields.Int(required=False)
     
     payments = fields.Nested(ItemsPayments, required=False)
+    
+    payment_methods = fields.Dict(required=False)
     
 

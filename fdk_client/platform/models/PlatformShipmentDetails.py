@@ -17,6 +17,8 @@ from .ShipmentBreakupValues import ShipmentBreakupValues
 
 from .DpDetails import DpDetails
 
+
+
 from .ShipmentInvoice import ShipmentInvoice
 
 from .PlatformFulfillingStore import PlatformFulfillingStore
@@ -83,6 +85,8 @@ class PlatformShipmentDetails(BaseSchema):
     id = fields.Str(required=False)
     
     dp_details = fields.Nested(DpDetails, required=False)
+    
+    payment_methods = fields.Dict(required=False)
     
     invoice = fields.Nested(ShipmentInvoice, required=False)
     

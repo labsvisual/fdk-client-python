@@ -11,11 +11,11 @@ from ..models.BaseSchema import BaseSchema
 
 
 class ProductReturnConfigSerializer(BaseSchema):
-    # CompanyProfile swagger.json
+    # Catalog swagger.json
 
     
-    on_same_store = fields.Boolean(required=False)
-    
     store_uid = fields.Int(required=False)
+    
+    on_same_store = fields.Boolean(required=False)
     
 

@@ -17,6 +17,8 @@ from .Association import Association
 
 
 
+
+
 from .AuthMeta import AuthMeta
 
 
@@ -37,6 +39,8 @@ class SubscriberResponse(BaseSchema):
     webhook_url = fields.Str(required=False)
     
     association = fields.Nested(Association, required=False)
+    
+    custom_headers = fields.Dict(required=False)
     
     email_id = fields.Str(required=False)
     

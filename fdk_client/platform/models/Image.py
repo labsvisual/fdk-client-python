@@ -20,10 +20,10 @@ class Image(BaseSchema):
     
     aspect_ratio_f = fields.Float(required=False)
     
-    secure_url = fields.Str(required=False)
-    
     aspect_ratio = fields.Str(required=False)
     
     url = fields.Str(required=False)
+    
+    secure_url = fields.Str(required=False)
     
 

@@ -18,10 +18,10 @@ async def validate_required_query_params(proccessed_params: Dict, params: Dict):
             raise RequiredParametersError(message="{} missing".format(r_param["name"]))
 
 
-async def create_url_with_params(domain: Text, url: Text, proccessed_params: Text, **kwargs):
+async def create_url_with_params(domain: Text = "", api_url: Text = "", proccessed_params: Text = "", **kwargs):
     """Creates url with params"""
     params = {}
-    final_url = domain + url
+    final_url = domain + api_url
     for key, value in kwargs.items():
         if value:
             new_key = key.replace("__", "-")
@@ -68,7 +68,7 @@ async def create_query_string(**kwargs):
 async def get_headers_with_signature(domain: Text, method: Text, url: Text, query_string: Text, headers: Dict, body="",
                                      exclude_headers=[], sign_query=False):
     """Returns headers with signature."""
-    query_string = query_string.replace("%3A", ":").replace("%2F", "/").replace("%3F", "?").replace("%3D", "=").replace("%26", "&")
+    query_string = parse.unquote(query_string)
     fp_date = datetime.now().strftime("%Y%m%dT%H%M%SZ")
     headers_str = ""
     host = domain.replace("https://", "").replace("http://", "")

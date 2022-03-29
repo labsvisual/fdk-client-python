@@ -106,6 +106,67 @@ class ContentValidator:
         slug = fields.Str(required=False)
          
     
+    class addDataLoader(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+         
+    
+    class getDataLoaders(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+         
+    
+    class deleteDataLoader(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        data_loader_id = fields.Str(required=False)
+         
+    
+    class editDataLoader(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        data_loader_id = fields.Str(required=False)
+         
+    
+    class getDataLoadersByService(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        service_name = fields.Str(required=False)
+         
+    
+    class selectDataLoader(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        data_loader_id = fields.Str(required=False)
+         
+    
+    class resetDataLoader(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        service = fields.Str(required=False)
+        
+        operation_id = fields.Str(required=False)
+         
+    
     class getFaqCategories(BaseSchema):
         
         company_id = fields.Str(required=False)

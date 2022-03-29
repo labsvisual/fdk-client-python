@@ -16,9 +16,9 @@ class CardPaymentGateway(BaseSchema):
     # Payment swagger.json
 
     
-    aggregator = fields.Str(required=False)
-    
     api = fields.Str(required=False)
+    
+    aggregator = fields.Str(required=False)
     
     customer_id = fields.Str(required=False)
     

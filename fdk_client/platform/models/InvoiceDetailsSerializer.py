@@ -11,7 +11,7 @@ from .InvoiceCredSerializer import InvoiceCredSerializer
 
 
 class InvoiceDetailsSerializer(BaseSchema):
-    # CompanyProfile swagger.json
+    # Catalog swagger.json
 
     
     e_invoice = fields.Nested(InvoiceCredSerializer, required=False)

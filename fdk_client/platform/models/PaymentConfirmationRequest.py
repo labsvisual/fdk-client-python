@@ -7,7 +7,7 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-from .PaymentConfirmationMode import PaymentConfirmationMode
+from .MultiTenderPaymentMethod import MultiTenderPaymentMethod
 
 
 class PaymentConfirmationRequest(BaseSchema):
@@ -16,6 +16,6 @@ class PaymentConfirmationRequest(BaseSchema):
     
     order_id = fields.Str(required=False)
     
-    payment_methods = fields.List(fields.Nested(PaymentConfirmationMode, required=False), required=False)
+    payment_methods = fields.List(fields.Nested(MultiTenderPaymentMethod, required=False), required=False)
     
 

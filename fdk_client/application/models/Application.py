@@ -57,7 +57,7 @@ from .Domain import Domain
 
 
 class Application(BaseSchema):
-    # Configuration swagger.json
+    # Common swagger.json
 
     
     website = fields.Nested(ApplicationWebsite, required=False)

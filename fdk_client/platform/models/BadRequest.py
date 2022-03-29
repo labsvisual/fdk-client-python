@@ -9,7 +9,7 @@ from ..models.BaseSchema import BaseSchema
 
 
 class BadRequest(BaseSchema):
-    # Billing swagger.json
+    # Common swagger.json
 
     
     message = fields.Str(required=False)

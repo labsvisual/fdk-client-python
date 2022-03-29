@@ -17,3 +17,7 @@ class FileStorageValidator:
         namespace = fields.Str(required=False)
          
     
+    class signUrls(BaseSchema):
+        
+        pass 
+    

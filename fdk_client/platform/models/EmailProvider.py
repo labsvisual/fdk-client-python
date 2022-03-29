@@ -38,7 +38,7 @@ class EmailProvider(BaseSchema):
     
     provider = fields.Str(required=False)
     
-    from_ = fields.List(fields.Nested(EmailProviderReqFrom, required=False), required=False)
+    from_address = fields.List(fields.Nested(EmailProviderReqFrom, required=False), required=False)
     
     _id = fields.Str(required=False)
     

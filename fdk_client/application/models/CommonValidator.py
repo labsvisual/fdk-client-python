@@ -7,6 +7,13 @@ from ..models.BaseSchema import BaseSchema
 
 class CommonValidator:
     
+    class searchApplication(BaseSchema):
+        
+        authorization = fields.Str(required=False)
+        
+        query = fields.Str(required=False)
+         
+    
     class getLocations(BaseSchema):
         
         location_type = fields.Str(required=False)

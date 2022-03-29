@@ -13,7 +13,7 @@ from ..models.BaseSchema import BaseSchema
 
 
 class InvoiceCredSerializer(BaseSchema):
-    # CompanyProfile swagger.json
+    # Catalog swagger.json
 
     
     password = fields.Str(required=False)

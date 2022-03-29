@@ -11,7 +11,7 @@ from ..models.BaseSchema import BaseSchema
 
 
 class SellerPhoneNumber(BaseSchema):
-    # CompanyProfile swagger.json
+    # Catalog swagger.json
 
     
     number = fields.Str(required=False)

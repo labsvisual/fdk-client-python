@@ -14,8 +14,8 @@ class LatLong(BaseSchema):
     # Catalog swagger.json
 
     
-    type = fields.Str(required=False)
-    
     coordinates = fields.List(fields.Float(required=False), required=False)
+    
+    type = fields.Str(required=False)
     
 

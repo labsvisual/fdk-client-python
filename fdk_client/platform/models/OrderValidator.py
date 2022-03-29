@@ -31,7 +31,7 @@ class OrderValidator:
         shipment_id = fields.Str(required=False)
          
     
-    class ShipmentBagsCanBreak(BaseSchema):
+    class shipmentBagsCanBreak(BaseSchema):
         
         company_id = fields.Str(required=False)
          
