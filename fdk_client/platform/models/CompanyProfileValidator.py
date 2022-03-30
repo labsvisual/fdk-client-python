@@ -41,11 +41,6 @@ class CompanyProfileValidator:
         company_id = fields.Str(required=False)
          
     
-    class createCompanyBrandMapping(BaseSchema):
-        
-        company_id = fields.Str(required=False)
-         
-    
     class getBrands(BaseSchema):
         
         company_id = fields.Str(required=False)
@@ -57,7 +52,7 @@ class CompanyProfileValidator:
         q = fields.Str(required=False)
          
     
-    class createLocation(BaseSchema):
+    class createCompanyBrandMapping(BaseSchema):
         
         company_id = fields.Str(required=False)
          
@@ -75,6 +70,11 @@ class CompanyProfileValidator:
         page_no = fields.Int(required=False)
         
         page_size = fields.Int(required=False)
+         
+    
+    class createLocation(BaseSchema):
+        
+        company_id = fields.Str(required=False)
          
     
     class updateLocation(BaseSchema):

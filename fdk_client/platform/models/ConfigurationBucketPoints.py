@@ -14,8 +14,8 @@ class ConfigurationBucketPoints(BaseSchema):
     # Catalog swagger.json
 
     
-    end = fields.Float(required=False)
-    
     start = fields.Float(required=False)
+    
+    end = fields.Float(required=False)
     
 

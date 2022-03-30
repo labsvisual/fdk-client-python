@@ -89,3 +89,26 @@ class InventoryValidator:
         page_size = fields.Int(required=False)
          
     
+    class getJobConfigByIntegrationType(BaseSchema):
+        
+        company_id = fields.Int(required=False)
+        
+        integration_type = fields.Str(required=False)
+        
+        disable = fields.Boolean(required=False)
+         
+    
+    class getJobCodesMetrics(BaseSchema):
+        
+        company_id = fields.Int(required=False)
+        
+        daily_job = fields.Boolean(required=False)
+        
+        job_code = fields.Str(required=False)
+         
+    
+    class saveJobCodesMetrics(BaseSchema):
+        
+        company_id = fields.Int(required=False)
+         
+    

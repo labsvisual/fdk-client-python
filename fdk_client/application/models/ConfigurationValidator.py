@@ -70,6 +70,19 @@ class ConfigurationValidator:
         
         pass 
     
+    class getAppStaffList(BaseSchema):
+        
+        page_no = fields.Int(required=False)
+        
+        page_size = fields.Int(required=False)
+        
+        order_incent = fields.Boolean(required=False)
+        
+        ordering_store = fields.Int(required=False)
+        
+        user = fields.Str(required=False)
+         
+    
     class getAppStaffs(BaseSchema):
         
         order_incent = fields.Boolean(required=False)

@@ -14,8 +14,8 @@ class UpdateRefundTransferModeRequest(BaseSchema):
     # Payment swagger.json
 
     
-    enable = fields.Boolean(required=False)
-    
     transfer_mode = fields.Str(required=False)
+    
+    enable = fields.Boolean(required=False)
     
 

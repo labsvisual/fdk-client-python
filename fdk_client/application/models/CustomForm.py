@@ -29,8 +29,6 @@ from .SubmitButton import SubmitButton
 
 from .CreatedOn import CreatedOn
 
-
-
 from .PollForAssignment import PollForAssignment
 
 
@@ -63,8 +61,6 @@ class CustomForm(BaseSchema):
     inputs = fields.List(fields.Dict(required=False), required=False)
     
     created_on = fields.Nested(CreatedOn, required=False)
-    
-    created_by = fields.Dict(required=False)
     
     poll_for_assignment = fields.Nested(PollForAssignment, required=False)
     

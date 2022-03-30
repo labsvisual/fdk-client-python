@@ -3257,6 +3257,7 @@ class Configuration:
             "getLanguages": "/service/application/configuration/v1.0/languages",
             "getOrderingStoreCookie": "/service/application/configuration/v1.0/ordering-store/select",
             "removeOrderingStoreCookie": "/service/application/configuration/v1.0/ordering-store/select",
+            "getAppStaffList": "/service/application/configuration/v1.0/staff/list",
             "getAppStaffs": "/service/application/configuration/v1.0/staff"
             
         }
@@ -3487,6 +3488,40 @@ class Configuration:
         url_with_params = await create_url_with_params(api_url=self._urls["removeOrderingStoreCookie"], proccessed_params="""{"required":[],"optional":[],"query":[],"headers":[],"path":[]}""", )
         query_string = await create_query_string()
         return await AiohttpHelper().aiohttp_request("DELETE", url_with_params, headers=await get_headers_with_signature(urlparse(self._urls["removeOrderingStoreCookie"]).netloc, "delete", await create_url_without_domain("/service/application/configuration/v1.0/ordering-store/select", ), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
+    
+    async def getAppStaffList(self, page_no=None, page_size=None, order_incent=None, ordering_store=None, user=None, body=""):
+        """Use this API to get a list of staff including the names, employee code, incentive status, assigned ordering stores, and title of each staff added to the application.
+        :param page_no :  : type integer
+        :param page_size :  : type integer
+        :param order_incent : This is a boolean value. Select `true` to retrieve the staff members eligible for getting incentives on orders. : type boolean
+        :param ordering_store : ID of the ordering store. Helps in retrieving staff members working at a particular ordering store. : type integer
+        :param user : Mongo ID of the staff. Helps in retrieving the details of a particular staff member. : type string
+        """
+        payload = {}
+        
+        if page_no:
+            payload["page_no"] = page_no
+        
+        if page_size:
+            payload["page_size"] = page_size
+        
+        if order_incent:
+            payload["order_incent"] = order_incent
+        
+        if ordering_store:
+            payload["ordering_store"] = ordering_store
+        
+        if user:
+            payload["user"] = user
+        
+        # Parameter validation
+        schema = ConfigurationValidator.getAppStaffList()
+        schema.dump(schema.load(payload))
+        
+
+        url_with_params = await create_url_with_params(api_url=self._urls["getAppStaffList"], proccessed_params="""{"required":[],"optional":[{"name":"page_no","in":"query","schema":{"type":"integer"}},{"name":"page_size","in":"query","schema":{"type":"integer"}},{"name":"order_incent","in":"query","description":"This is a boolean value. Select `true` to retrieve the staff members eligible for getting incentives on orders.","required":false,"schema":{"type":"boolean","example":true}},{"name":"ordering_store","in":"query","description":"ID of the ordering store. Helps in retrieving staff members working at a particular ordering store.","required":false,"schema":{"type":"integer","example":12}},{"name":"user","in":"query","description":"Mongo ID of the staff. Helps in retrieving the details of a particular staff member.","required":false,"schema":{"type":"string","example":"5e6b6ae7d450b1219ffdf3b2"}}],"query":[{"name":"page_no","in":"query","schema":{"type":"integer"}},{"name":"page_size","in":"query","schema":{"type":"integer"}},{"name":"order_incent","in":"query","description":"This is a boolean value. Select `true` to retrieve the staff members eligible for getting incentives on orders.","required":false,"schema":{"type":"boolean","example":true}},{"name":"ordering_store","in":"query","description":"ID of the ordering store. Helps in retrieving staff members working at a particular ordering store.","required":false,"schema":{"type":"integer","example":12}},{"name":"user","in":"query","description":"Mongo ID of the staff. Helps in retrieving the details of a particular staff member.","required":false,"schema":{"type":"string","example":"5e6b6ae7d450b1219ffdf3b2"}}],"headers":[],"path":[]}""", page_no=page_no, page_size=page_size, order_incent=order_incent, ordering_store=ordering_store, user=user)
+        query_string = await create_query_string(page_no=page_no, page_size=page_size, order_incent=order_incent, ordering_store=ordering_store, user=user)
+        return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(urlparse(self._urls["getAppStaffList"]).netloc, "get", await create_url_without_domain("/service/application/configuration/v1.0/staff/list", page_no=page_no, page_size=page_size, order_incent=order_incent, ordering_store=ordering_store, user=user), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
     
     async def getAppStaffs(self, order_incent=None, ordering_store=None, user=None, body=""):
         """Use this API to get a list of staff including the names, employee code, incentive status, assigned ordering stores, and title of each staff added to the application.
