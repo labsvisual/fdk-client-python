@@ -18,9 +18,9 @@ class ProductFiltersKey(BaseSchema):
     # Catalog swagger.json
 
     
-    name = fields.Str(required=False)
-    
     kind = fields.Str(required=False)
+    
+    name = fields.Str(required=False)
     
     logo = fields.Str(required=False)
     

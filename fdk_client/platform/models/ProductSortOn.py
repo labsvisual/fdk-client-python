@@ -18,8 +18,8 @@ class ProductSortOn(BaseSchema):
     
     name = fields.Str(required=False)
     
-    is_selected = fields.Boolean(required=False)
-    
     value = fields.Str(required=False)
+    
+    is_selected = fields.Boolean(required=False)
     
 
