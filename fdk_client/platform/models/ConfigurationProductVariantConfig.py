@@ -24,18 +24,18 @@ class ConfigurationProductVariantConfig(BaseSchema):
     # Catalog swagger.json
 
     
-    priority = fields.Int(required=False)
-    
-    name = fields.Str(required=False)
-    
-    display_type = fields.Str(required=False)
-    
-    size = fields.Nested(ProductSize, required=False)
-    
-    key = fields.Str(required=False)
-    
     logo = fields.Str(required=False)
     
     is_active = fields.Boolean(required=False)
+    
+    priority = fields.Int(required=False)
+    
+    size = fields.Nested(ProductSize, required=False)
+    
+    display_type = fields.Str(required=False)
+    
+    name = fields.Str(required=False)
+    
+    key = fields.Str(required=False)
     
 
