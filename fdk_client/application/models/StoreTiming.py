@@ -18,11 +18,11 @@ class StoreTiming(BaseSchema):
     # Catalog swagger.json
 
     
-    closing = fields.Nested(Time, required=False)
+    opening = fields.Nested(Time, required=False)
     
     weekday = fields.Str(required=False)
     
-    opening = fields.Nested(Time, required=False)
+    closing = fields.Nested(Time, required=False)
     
     open = fields.Boolean(required=False)
     

@@ -10,9 +10,13 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 class EntityObject(BaseSchema):
     # AuditTrail swagger.json
 
+    
+    id = fields.Str(required=False)
     
     type = fields.Str(required=False)
     

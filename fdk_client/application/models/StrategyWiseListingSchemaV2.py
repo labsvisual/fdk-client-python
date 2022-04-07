@@ -18,12 +18,12 @@ class StrategyWiseListingSchemaV2(BaseSchema):
     # Catalog swagger.json
 
     
-    distance = fields.Int(required=False)
-    
     pincode = fields.Int(required=False)
+    
+    quantity = fields.Int(required=False)
     
     tat = fields.Int(required=False)
     
-    quantity = fields.Int(required=False)
+    distance = fields.Int(required=False)
     
 

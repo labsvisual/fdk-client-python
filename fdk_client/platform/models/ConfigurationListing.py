@@ -5,17 +5,17 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-from .ConfigurationListingSort import ConfigurationListingSort
-
 from .ConfigurationListingFilter import ConfigurationListingFilter
+
+from .ConfigurationListingSort import ConfigurationListingSort
 
 
 class ConfigurationListing(BaseSchema):
     # Catalog swagger.json
 
     
-    sort = fields.Nested(ConfigurationListingSort, required=False)
-    
     filter = fields.Nested(ConfigurationListingFilter, required=False)
+    
+    sort = fields.Nested(ConfigurationListingSort, required=False)
     
 

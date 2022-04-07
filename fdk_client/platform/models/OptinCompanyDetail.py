@@ -22,8 +22,8 @@ class OptinCompanyDetail(BaseSchema):
     
     company_type = fields.Str(required=False)
     
-    uid = fields.Int(required=False)
-    
     name = fields.Str(required=False)
+    
+    uid = fields.Int(required=False)
     
 

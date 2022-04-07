@@ -9,9 +9,9 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 from .Size1 import Size1
-
-
 
 
 class InventoryBulkRequest(BaseSchema):
@@ -22,8 +22,8 @@ class InventoryBulkRequest(BaseSchema):
     
     batch_id = fields.Str(required=False)
     
-    sizes = fields.List(fields.Nested(Size1, required=False), required=False)
-    
     user = fields.Dict(required=False)
+    
+    sizes = fields.List(fields.Nested(Size1, required=False), required=False)
     
 
