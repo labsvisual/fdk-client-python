@@ -9,9 +9,9 @@ from .ProductListingAction import ProductListingAction
 
 
 
-
-
 from .Media import Media
+
+
 
 
 class ProductBrand(BaseSchema):
@@ -22,8 +22,8 @@ class ProductBrand(BaseSchema):
     
     name = fields.Str(required=False)
     
-    uid = fields.Int(required=False)
-    
     logo = fields.Nested(Media, required=False)
+    
+    uid = fields.Int(required=False)
     
 

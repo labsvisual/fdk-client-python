@@ -5,17 +5,17 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
+
+
 from .CategoryItems import CategoryItems
-
-
 
 
 class DepartmentCategoryTree(BaseSchema):
     # Catalog swagger.json
 
     
-    items = fields.List(fields.Nested(CategoryItems, required=False), required=False)
-    
     department = fields.Str(required=False)
+    
+    items = fields.List(fields.Nested(CategoryItems, required=False), required=False)
     
 

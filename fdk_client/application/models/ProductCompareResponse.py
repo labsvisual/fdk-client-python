@@ -18,12 +18,12 @@ class ProductCompareResponse(BaseSchema):
     # Catalog swagger.json
 
     
-    title = fields.Str(required=False)
+    subtitle = fields.Str(required=False)
     
     attributes_metadata = fields.List(fields.Nested(AttributeMetadata, required=False), required=False)
     
     items = fields.List(fields.Nested(ProductDetail, required=False), required=False)
     
-    subtitle = fields.Str(required=False)
+    title = fields.Str(required=False)
     
 

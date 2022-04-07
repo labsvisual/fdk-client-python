@@ -7,9 +7,9 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-
-
 from .SellerPhoneNumber import SellerPhoneNumber
+
+
 
 
 class LocationManagerSerializer(BaseSchema):
@@ -18,8 +18,8 @@ class LocationManagerSerializer(BaseSchema):
     
     name = fields.Str(required=False)
     
-    email = fields.Str(required=False)
-    
     mobile_no = fields.Nested(SellerPhoneNumber, required=False)
+    
+    email = fields.Str(required=False)
     
 

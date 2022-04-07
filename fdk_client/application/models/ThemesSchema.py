@@ -37,11 +37,7 @@ from .availableSectionSchema import availableSectionSchema
 
 
 
-
-
 from .Config import Config
-
-
 
 from .Font import Font
 
@@ -86,13 +82,9 @@ class ThemesSchema(BaseSchema):
     
     available_sections = fields.List(fields.Nested(availableSectionSchema, required=False), required=False)
     
-    constants = fields.Dict(required=False)
-    
     styles = fields.Dict(required=False)
     
     config = fields.Nested(Config, required=False)
-    
-    settings = fields.Dict(required=False)
     
     font = fields.Nested(Font, required=False)
     
