@@ -7,12 +7,12 @@ from ..models.BaseSchema import BaseSchema
 
 class CompanyProfileValidator:
     
-    class updateCompany(BaseSchema):
+    class cbsOnboardGet(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class cbsOnboardGet(BaseSchema):
+    class updateCompany(BaseSchema):
         
         company_id = fields.Str(required=False)
          

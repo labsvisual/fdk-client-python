@@ -10,11 +10,15 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 class ConfigurationBucketPoints(BaseSchema):
     # Catalog swagger.json
 
     
     start = fields.Float(required=False)
+    
+    display = fields.Str(required=False)
     
     end = fields.Float(required=False)
     

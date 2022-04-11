@@ -20,10 +20,10 @@ class ProductBrand(BaseSchema):
     
     action = fields.Nested(ProductListingAction, required=False)
     
-    name = fields.Str(required=False)
+    uid = fields.Int(required=False)
     
     logo = fields.Nested(Media, required=False)
     
-    uid = fields.Int(required=False)
+    name = fields.Str(required=False)
     
 
