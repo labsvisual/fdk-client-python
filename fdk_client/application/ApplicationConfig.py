@@ -7,14 +7,13 @@ from ..common.exceptions import FDKInvalidCredentialError
 
 
 class ApplicationConfig:
-    def __init__(self, _conf: Dict, _opts: Dict = {}):
+    def __init__(self, _conf: Dict, _opts: Dict = None, cookies: Dict = None):
         """Defines application id, token and validates it."""
-        if _opts is None:
-            _opts = {}
         self.applicationID = _conf.get("applicationID", "")
         self.applicationToken = _conf.get("applicationToken", "")
-        self.opts = _opts
+        self.opts = _opts or {}
         self.domain = _conf.get("domain", DEFAULT_DOMAIN)
+        self.cookies = cookies or {}
         self.validate()
 
     def validate(self):

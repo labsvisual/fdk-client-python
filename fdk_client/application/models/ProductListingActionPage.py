@@ -16,9 +16,9 @@ class ProductListingActionPage(BaseSchema):
     # Catalog swagger.json
 
     
-    type = fields.Str(required=False)
-    
     query = fields.Dict(required=False)
+    
+    type = fields.Str(required=False)
     
     params = fields.Dict(required=False)
     

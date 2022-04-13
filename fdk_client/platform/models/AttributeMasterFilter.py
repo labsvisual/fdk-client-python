@@ -16,9 +16,9 @@ class AttributeMasterFilter(BaseSchema):
     # Catalog swagger.json
 
     
-    depends_on = fields.List(fields.Str(required=False), required=False)
-    
     priority = fields.Int(required=False)
+    
+    depends_on = fields.List(fields.Str(required=False), required=False)
     
     indexing = fields.Boolean(required=False)
     
