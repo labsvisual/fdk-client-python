@@ -20,10 +20,10 @@ class Size(BaseSchema):
     
     is_available = fields.Boolean(required=False)
     
-    quantity = fields.Int(required=False)
+    value = fields.Str(required=False)
     
     display = fields.Str(required=False)
     
-    value = fields.Str(required=False)
+    quantity = fields.Int(required=False)
     
 

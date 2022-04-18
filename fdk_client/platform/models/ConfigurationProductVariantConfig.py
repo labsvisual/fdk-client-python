@@ -30,12 +30,12 @@ class ConfigurationProductVariantConfig(BaseSchema):
     
     size = fields.Nested(ProductSize, required=False)
     
-    display_type = fields.Str(required=False)
-    
-    is_active = fields.Boolean(required=False)
-    
     name = fields.Str(required=False)
     
     logo = fields.Str(required=False)
+    
+    display_type = fields.Str(required=False)
+    
+    is_active = fields.Boolean(required=False)
     
 

@@ -11,23 +11,23 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-
-
 from .Media import Media
+
+
 
 
 class Department(BaseSchema):
     # Catalog swagger.json
 
     
-    priority_order = fields.Int(required=False)
-    
-    uid = fields.Int(required=False)
-    
     slug = fields.Str(required=False)
+    
+    priority_order = fields.Int(required=False)
     
     name = fields.Str(required=False)
     
     logo = fields.Nested(Media, required=False)
+    
+    uid = fields.Int(required=False)
     
 

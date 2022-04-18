@@ -14,8 +14,8 @@ class SuccessResponse(BaseSchema):
     # Catalog swagger.json
 
     
-    uid = fields.Int(required=False)
-    
     success = fields.Boolean(required=False)
+    
+    uid = fields.Int(required=False)
     
 
