@@ -7,9 +7,9 @@ from ..models.BaseSchema import BaseSchema
 
 from .Page import Page
 
-from .ProductSizePriceResponseV2 import ProductSizePriceResponseV2
-
 from .ProductSizeSellerFilterSchemaV2 import ProductSizeSellerFilterSchemaV2
+
+from .ProductSizePriceResponseV2 import ProductSizePriceResponseV2
 
 
 class ProductSizeSellersResponseV2(BaseSchema):
@@ -18,8 +18,8 @@ class ProductSizeSellersResponseV2(BaseSchema):
     
     page = fields.Nested(Page, required=False)
     
-    items = fields.List(fields.Nested(ProductSizePriceResponseV2, required=False), required=False)
-    
     sort_on = fields.List(fields.Nested(ProductSizeSellerFilterSchemaV2, required=False), required=False)
+    
+    items = fields.List(fields.Nested(ProductSizePriceResponseV2, required=False), required=False)
     
 

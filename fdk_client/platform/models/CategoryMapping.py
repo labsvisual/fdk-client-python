@@ -18,8 +18,8 @@ class CategoryMapping(BaseSchema):
     
     ajio = fields.Nested(CategoryMappingValues, required=False)
     
-    facebook = fields.Nested(CategoryMappingValues, required=False)
-    
     google = fields.Nested(CategoryMappingValues, required=False)
+    
+    facebook = fields.Nested(CategoryMappingValues, required=False)
     
 

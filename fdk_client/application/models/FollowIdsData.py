@@ -16,9 +16,9 @@ class FollowIdsData(BaseSchema):
     # Catalog swagger.json
 
     
-    products = fields.List(fields.Int(required=False), required=False)
-    
     collections = fields.List(fields.Int(required=False), required=False)
+    
+    products = fields.List(fields.Int(required=False), required=False)
     
     brands = fields.List(fields.Int(required=False), required=False)
     

@@ -18,9 +18,9 @@ class MetaDataListingFilterMetaResponse(BaseSchema):
     # Catalog swagger.json
 
     
-    key = fields.Str(required=False)
-    
     units = fields.List(fields.Dict(required=False), required=False)
+    
+    key = fields.Str(required=False)
     
     display = fields.Str(required=False)
     

@@ -18,8 +18,8 @@ class ProductDownloadItemsData(BaseSchema):
     
     templates = fields.List(fields.Str(required=False), required=False)
     
-    type = fields.Str(required=False)
-    
     brand = fields.List(fields.Str(required=False), required=False)
+    
+    type = fields.Str(required=False)
     
 
