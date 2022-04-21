@@ -20,9 +20,9 @@ class StoreTiming(BaseSchema):
     
     opening = fields.Nested(Time, required=False)
     
-    weekday = fields.Str(required=False)
-    
     open = fields.Boolean(required=False)
+    
+    weekday = fields.Str(required=False)
     
     closing = fields.Nested(Time, required=False)
     

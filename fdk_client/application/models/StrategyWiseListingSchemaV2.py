@@ -20,10 +20,10 @@ class StrategyWiseListingSchemaV2(BaseSchema):
     
     distance = fields.Int(required=False)
     
-    pincode = fields.Int(required=False)
-    
     quantity = fields.Int(required=False)
     
     tat = fields.Int(required=False)
+    
+    pincode = fields.Int(required=False)
     
 

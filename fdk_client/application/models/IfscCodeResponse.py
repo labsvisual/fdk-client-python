@@ -16,10 +16,10 @@ class IfscCodeResponse(BaseSchema):
     # Payment swagger.json
 
     
-    success = fields.Boolean(required=False)
+    branch_name = fields.Str(required=False)
     
     bank_name = fields.Str(required=False)
     
-    branch_name = fields.Str(required=False)
+    success = fields.Boolean(required=False)
     
 

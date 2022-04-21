@@ -16,10 +16,10 @@ class WrongOtpError(BaseSchema):
     # Payment swagger.json
 
     
-    success = fields.Str(required=False)
+    is_verified_flag = fields.Boolean(required=False)
     
     description = fields.Str(required=False)
     
-    is_verified_flag = fields.Boolean(required=False)
+    success = fields.Str(required=False)
     
 

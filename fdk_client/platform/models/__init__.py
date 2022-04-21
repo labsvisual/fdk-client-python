@@ -962,9 +962,9 @@ from .HttpErrorCodeAndResponse import HttpErrorCodeAndResponse
     
 from .PaymentModeLogo import PaymentModeLogo
     
-from .IntentApp import IntentApp
-    
 from .IntentAppErrorList import IntentAppErrorList
+    
+from .IntentApp import IntentApp
     
 from .PaymentModeList import PaymentModeList
     
@@ -1342,11 +1342,11 @@ from .GetSearchWordsDetailResponse import GetSearchWordsDetailResponse
     
 from .ErrorResponse import ErrorResponse
     
-from .DeleteResponse import DeleteResponse
-    
 from .SearchKeywordResult import SearchKeywordResult
     
 from .CreateSearchKeyword import CreateSearchKeyword
+    
+from .DeleteResponse import DeleteResponse
     
 from .GetSearchWordsResponse import GetSearchWordsResponse
     
@@ -1376,9 +1376,9 @@ from .ProductBundleRequest import ProductBundleRequest
     
 from .Price import Price
     
-from .Size import Size
-    
 from .LimitedProductData import LimitedProductData
+    
+from .Size import Size
     
 from .GetProducts import GetProducts
     
@@ -1432,13 +1432,13 @@ from .ConfigurationListing import ConfigurationListing
     
 from .ProductSize import ProductSize
     
-from .ConfigurationProductVariantConfig import ConfigurationProductVariantConfig
-    
-from .ConfigurationProductVariant import ConfigurationProductVariant
-    
 from .ConfigurationProductConfig import ConfigurationProductConfig
     
 from .ConfigurationProductSimilar import ConfigurationProductSimilar
+    
+from .ConfigurationProductVariantConfig import ConfigurationProductVariantConfig
+    
+from .ConfigurationProductVariant import ConfigurationProductVariant
     
 from .ConfigurationProduct import ConfigurationProduct
     
@@ -1454,15 +1454,23 @@ from .EntityConfiguration import EntityConfiguration
     
 from .GetAppCatalogEntityConfiguration import GetAppCatalogEntityConfiguration
     
+from .ProductSortOn import ProductSortOn
+    
 from .ProductFiltersValue import ProductFiltersValue
     
 from .ProductFiltersKey import ProductFiltersKey
     
 from .ProductFilters import ProductFilters
     
-from .ProductSortOn import ProductSortOn
-    
 from .GetCollectionQueryOptionResponse import GetCollectionQueryOptionResponse
+    
+from .Media1 import Media1
+    
+from .BannerImage import BannerImage
+    
+from .ImageUrls import ImageUrls
+    
+from .GetCollectionDetailNest import GetCollectionDetailNest
     
 from .CollectionListingFilterTag import CollectionListingFilterTag
     
@@ -1470,27 +1478,19 @@ from .CollectionListingFilterType import CollectionListingFilterType
     
 from .CollectionListingFilter import CollectionListingFilter
     
-from .BannerImage import BannerImage
-    
-from .ImageUrls import ImageUrls
-    
-from .Media1 import Media1
-    
-from .GetCollectionDetailNest import GetCollectionDetailNest
-    
 from .GetCollectionListingResponse import GetCollectionListingResponse
     
+from .Schedule import Schedule
+    
 from .CollectionImage import CollectionImage
+    
+from .CollectionBadge import CollectionBadge
+    
+from .SeoDetail import SeoDetail
     
 from .CollectionBanner import CollectionBanner
     
 from .UserInfo import UserInfo
-    
-from .Schedule import Schedule
-    
-from .SeoDetail import SeoDetail
-    
-from .CollectionBadge import CollectionBadge
     
 from .CreateCollection import CreateCollection
     
@@ -1500,8 +1500,6 @@ from .CollectionDetailResponse import CollectionDetailResponse
     
 from .UpdateCollection import UpdateCollection
     
-from .ProductBrand import ProductBrand
-    
 from .Price1 import Price1
     
 from .ProductListingPrice import ProductListingPrice
@@ -1509,6 +1507,8 @@ from .ProductListingPrice import ProductListingPrice
 from .ProductDetailAttribute import ProductDetailAttribute
     
 from .ProductDetailGroupedAttribute import ProductDetailGroupedAttribute
+    
+from .ProductBrand import ProductBrand
     
 from .ProductListingDetail import ProductListingDetail
     
@@ -1518,9 +1518,9 @@ from .CollectionItemRequest import CollectionItemRequest
     
 from .UpdatedResponse import UpdatedResponse
     
-from .CatalogInsightItem import CatalogInsightItem
-    
 from .CatalogInsightBrand import CatalogInsightBrand
+    
+from .CatalogInsightItem import CatalogInsightItem
     
 from .CatalogInsightResponse import CatalogInsightResponse
     
@@ -1546,17 +1546,17 @@ from .StoreDetail import StoreDetail
     
 from .OptinStoreDetails import OptinStoreDetails
     
-from .AttributeSchemaRange import AttributeSchemaRange
-    
-from .AttributeMaster import AttributeMaster
-    
-from .AttributeMasterFilter import AttributeMasterFilter
-    
 from .AttributeMasterMandatoryDetails import AttributeMasterMandatoryDetails
     
 from .AttributeMasterMeta import AttributeMasterMeta
     
+from .AttributeMasterFilter import AttributeMasterFilter
+    
 from .AttributeMasterDetails import AttributeMasterDetails
+    
+from .AttributeSchemaRange import AttributeSchemaRange
+    
+from .AttributeMaster import AttributeMaster
     
 from .GenderDetail import GenderDetail
     
@@ -1576,13 +1576,13 @@ from .ProductTemplate import ProductTemplate
     
 from .TemplatesResponse import TemplatesResponse
     
+from .TemplateDetails import TemplateDetails
+    
 from .Properties import Properties
     
 from .GlobalValidation import GlobalValidation
     
 from .TemplateValidationData import TemplateValidationData
-    
-from .TemplateDetails import TemplateDetails
     
 from .TemplatesValidationResponse import TemplatesValidationResponse
     
@@ -1592,9 +1592,9 @@ from .HSNData import HSNData
     
 from .HSNCodesResponse import HSNCodesResponse
     
-from .VerifiedBy import VerifiedBy
-    
 from .ProductDownloadItemsData import ProductDownloadItemsData
+    
+from .VerifiedBy import VerifiedBy
     
 from .ProductDownloadsItems import ProductDownloadsItems
     
@@ -1604,11 +1604,11 @@ from .ProductConfigurationDownloads import ProductConfigurationDownloads
     
 from .Media2 import Media2
     
-from .Hierarchy import Hierarchy
-    
 from .CategoryMappingValues import CategoryMappingValues
     
 from .CategoryMapping import CategoryMapping
+    
+from .Hierarchy import Hierarchy
     
 from .Category import Category
     
@@ -1622,29 +1622,29 @@ from .SingleCategoryResponse import SingleCategoryResponse
     
 from .CategoryUpdateResponse import CategoryUpdateResponse
     
-from .Logo import Logo
-    
-from .Brand import Brand
-    
 from .Image import Image
     
 from .ProductPublished import ProductPublished
+    
+from .Logo import Logo
+    
+from .Brand import Brand
     
 from .Product import Product
     
 from .ProductListingResponse import ProductListingResponse
     
-from .Trader import Trader
-    
-from .ReturnConfig import ReturnConfig
-    
 from .CustomOrder import CustomOrder
     
 from .TeaserTag import TeaserTag
     
-from .OrderQuantity import OrderQuantity
+from .ReturnConfig import ReturnConfig
     
 from .ProductPublish import ProductPublish
+    
+from .OrderQuantity import OrderQuantity
+    
+from .Trader import Trader
     
 from .ProductCreateUpdate import ProductCreateUpdate
     
@@ -1684,7 +1684,7 @@ from .InventoryResponse import InventoryResponse
     
 from .InventoryResponsePaginated import InventoryResponsePaginated
     
-from .ItemQuery import ItemQuery
+from .GTIN import GTIN
     
 from .SetSize import SetSize
     
@@ -1692,9 +1692,9 @@ from .SizeDistribution import SizeDistribution
     
 from .InventorySet import InventorySet
     
-from .GTIN import GTIN
-    
 from .InvSize import InvSize
+    
+from .ItemQuery import ItemQuery
     
 from .InventoryRequest import InventoryRequest
     
@@ -1766,31 +1766,31 @@ from .ArticleAssignment1 import ArticleAssignment1
     
 from .StoreAssignResponse import StoreAssignResponse
     
-from .UserSerializer1 import UserSerializer1
-    
-from .GetAddressSerializer import GetAddressSerializer
-    
-from .GetCompanySerializer import GetCompanySerializer
-    
-from .UserSerializer2 import UserSerializer2
-    
 from .SellerPhoneNumber import SellerPhoneNumber
     
 from .LocationManagerSerializer import LocationManagerSerializer
     
-from .LocationIntegrationType import LocationIntegrationType
+from .UserSerializer1 import UserSerializer1
     
 from .LocationTimingSerializer import LocationTimingSerializer
     
 from .LocationDayWiseSerializer import LocationDayWiseSerializer
     
-from .Document import Document
-    
 from .ProductReturnConfigSerializer import ProductReturnConfigSerializer
+    
+from .LocationIntegrationType import LocationIntegrationType
     
 from .InvoiceCredSerializer import InvoiceCredSerializer
     
 from .InvoiceDetailsSerializer import InvoiceDetailsSerializer
+    
+from .GetAddressSerializer import GetAddressSerializer
+    
+from .UserSerializer2 import UserSerializer2
+    
+from .GetCompanySerializer import GetCompanySerializer
+    
+from .Document import Document
     
 from .GetLocationSerializer import GetLocationSerializer
     
@@ -1798,13 +1798,13 @@ from .LocationListSerializer import LocationListSerializer
     
 
     
-from .ContactDetails import ContactDetails
-    
 from .Website import Website
     
 from .BusinessDetails import BusinessDetails
     
 from .CreateUpdateAddressSerializer import CreateUpdateAddressSerializer
+    
+from .ContactDetails import ContactDetails
     
 from .UpdateCompany import UpdateCompany
     
@@ -1818,9 +1818,9 @@ from .MetricsSerializer import MetricsSerializer
     
 from .BrandBannerSerializer import BrandBannerSerializer
     
-from .CreateUpdateBrandRequestSerializer import CreateUpdateBrandRequestSerializer
-    
 from .GetBrandResponseSerializer import GetBrandResponseSerializer
+    
+from .CreateUpdateBrandRequestSerializer import CreateUpdateBrandRequestSerializer
     
 from .CompanyBrandSerializer import CompanyBrandSerializer
     
