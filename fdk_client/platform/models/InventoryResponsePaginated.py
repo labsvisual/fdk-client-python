@@ -7,15 +7,15 @@ from ..models.BaseSchema import BaseSchema
 
 from .Page import Page
 
-from .Items import Items
+from .InventoryResponse import InventoryResponse
 
 
-class BulkAssetResponse(BaseSchema):
+class InventoryResponsePaginated(BaseSchema):
     # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)
     
-    items = fields.List(fields.Nested(Items, required=False), required=False)
+    items = fields.List(fields.Nested(InventoryResponse, required=False), required=False)
     
 

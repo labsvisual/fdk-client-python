@@ -16,25 +16,17 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-
-
-
-
-class InventoryExportJob(BaseSchema):
+class InventoryExportResponse(BaseSchema):
     # Catalog swagger.json
 
     
     request_params = fields.Dict(required=False)
-    
-    url = fields.Str(required=False)
     
     trigger_on = fields.Str(required=False)
     
     task_id = fields.Str(required=False)
     
     seller_id = fields.Int(required=False)
-    
-    completed_on = fields.Str(required=False)
     
     status = fields.Str(required=False)
     

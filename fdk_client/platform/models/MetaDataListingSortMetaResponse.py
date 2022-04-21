@@ -14,8 +14,8 @@ class MetaDataListingSortMetaResponse(BaseSchema):
     # Catalog swagger.json
 
     
-    key = fields.Str(required=False)
-    
     display = fields.Str(required=False)
+    
+    key = fields.Str(required=False)
     
 

@@ -18,8 +18,8 @@ class StoreV2(BaseSchema):
     
     name = fields.Str(required=False)
     
-    uid = fields.Int(required=False)
-    
     count = fields.Int(required=False)
+    
+    uid = fields.Int(required=False)
     
 

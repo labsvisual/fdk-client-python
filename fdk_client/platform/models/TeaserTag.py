@@ -14,8 +14,8 @@ class TeaserTag(BaseSchema):
     # Catalog swagger.json
 
     
-    tag = fields.Str(required=False)
-    
     url = fields.Str(required=False)
+    
+    tag = fields.Str(required=False)
     
 

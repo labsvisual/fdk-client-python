@@ -2,11 +2,15 @@
 
 
     
-from .MetaFields import MetaFields
-    
 from .ProductListingActionPage import ProductListingActionPage
     
 from .ProductListingAction import ProductListingAction
+    
+from .MetaFields import MetaFields
+    
+from .Price import Price
+    
+from .ProductListingPrice import ProductListingPrice
     
 from .Meta import Meta
     
@@ -18,15 +22,9 @@ from .ProductDetailAttribute import ProductDetailAttribute
     
 from .ProductDetailGroupedAttribute import ProductDetailGroupedAttribute
     
-from .Price import Price
-    
-from .ProductListingPrice import ProductListingPrice
-    
 from .ProductDetail import ProductDetail
     
 from .ErrorResponse import ErrorResponse
-    
-from .ProductSizeStores import ProductSizeStores
     
 from .ProductSize import ProductSize
     
@@ -37,6 +35,8 @@ from .ColumnHeaders import ColumnHeaders
 from .SizeChartValues import SizeChartValues
     
 from .SizeChart import SizeChart
+    
+from .ProductSizeStores import ProductSizeStores
     
 from .ProductSizes import ProductSizes
     
@@ -62,9 +62,9 @@ from .ProductVariantsResponse import ProductVariantsResponse
     
 from .StoreDetail import StoreDetail
     
-from .Seller import Seller
-    
 from .ProductStockPrice import ProductStockPrice
+    
+from .Seller import Seller
     
 from .CompanyDetail import CompanyDetail
     
@@ -76,15 +76,15 @@ from .ProductStockPolling import ProductStockPolling
     
 from .ProductSortOn import ProductSortOn
     
+from .ProductVariantListingResponse import ProductVariantListingResponse
+    
+from .ProductListingDetail import ProductListingDetail
+    
 from .ProductFiltersValue import ProductFiltersValue
     
 from .ProductFiltersKey import ProductFiltersKey
     
 from .ProductFilters import ProductFilters
-    
-from .ProductVariantListingResponse import ProductVariantListingResponse
-    
-from .ProductListingDetail import ProductListingDetail
     
 from .ProductListingResponse import ProductListingResponse
     
@@ -122,13 +122,13 @@ from .AutocompleteItem import AutocompleteItem
     
 from .AutoCompleteResponse import AutoCompleteResponse
     
+from .GetCollectionDetailNest import GetCollectionDetailNest
+    
 from .CollectionListingFilterType import CollectionListingFilterType
     
 from .CollectionListingFilterTag import CollectionListingFilterTag
     
 from .CollectionListingFilter import CollectionListingFilter
-    
-from .GetCollectionDetailNest import GetCollectionDetailNest
     
 from .GetCollectionListingResponse import GetCollectionListingResponse
     
@@ -150,15 +150,15 @@ from .Store import Store
     
 from .StoreListingResponse import StoreListingResponse
     
-from .StoreDepartments import StoreDepartments
+from .StoreAddressSerializer import StoreAddressSerializer
     
 from .SellerPhoneNumber import SellerPhoneNumber
     
 from .StoreManagerSerializer import StoreManagerSerializer
     
-from .StoreAddressSerializer import StoreAddressSerializer
-    
 from .CompanyStore import CompanyStore
+    
+from .StoreDepartments import StoreDepartments
     
 from .AppStore import AppStore
     
@@ -170,11 +170,11 @@ from .StoreTiming import StoreTiming
     
 from .StoreDetails import StoreDetails
     
-from .Size import Size
+from .ProductDetails import ProductDetails
     
 from .Price1 import Price1
     
-from .ProductDetails import ProductDetails
+from .Size import Size
     
 from .Products import Products
     
@@ -184,27 +184,27 @@ from .ProductBundle import ProductBundle
     
 from .StrategyWiseListingSchemaV2 import StrategyWiseListingSchemaV2
     
-from .DetailsSchemaV2 import DetailsSchemaV2
-    
-from .SellerGroupAttributes import SellerGroupAttributes
-    
-from .StoreV2 import StoreV2
-    
-from .ReturnConfigSchemaV2 import ReturnConfigSchemaV2
-    
 from .ProductSetDistributionSizeV2 import ProductSetDistributionSizeV2
     
 from .ProductSetDistributionV2 import ProductSetDistributionV2
     
 from .ProductSetV2 import ProductSetV2
     
-from .MarketPlaceSttributesSchemaV2 import MarketPlaceSttributesSchemaV2
-    
-from .SellerV2 import SellerV2
+from .ArticleAssignmentV2 import ArticleAssignmentV2
     
 from .ProductStockPriceV2 import ProductStockPriceV2
     
-from .ArticleAssignmentV2 import ArticleAssignmentV2
+from .DetailsSchemaV2 import DetailsSchemaV2
+    
+from .SellerGroupAttributes import SellerGroupAttributes
+    
+from .SellerV2 import SellerV2
+    
+from .StoreV2 import StoreV2
+    
+from .ReturnConfigSchemaV2 import ReturnConfigSchemaV2
+    
+from .MarketPlaceSttributesSchemaV2 import MarketPlaceSttributesSchemaV2
     
 from .ProductSizePriceResponseV2 import ProductSizePriceResponseV2
     
