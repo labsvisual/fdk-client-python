@@ -18,8 +18,8 @@ class ErrorCodeDescription(BaseSchema):
     
     code = fields.Str(required=False)
     
-    description = fields.Str(required=False)
-    
     success = fields.Boolean(required=False)
+    
+    description = fields.Str(required=False)
     
 

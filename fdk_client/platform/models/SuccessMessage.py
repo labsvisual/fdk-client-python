@@ -14,8 +14,8 @@ class SuccessMessage(BaseSchema):
     # Cart swagger.json
 
     
-    message = fields.Str(required=False)
-    
     success = fields.Boolean(required=False)
+    
+    message = fields.Str(required=False)
     
 

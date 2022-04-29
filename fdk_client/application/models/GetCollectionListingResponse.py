@@ -7,9 +7,9 @@ from ..models.BaseSchema import BaseSchema
 
 from .GetCollectionDetailNest import GetCollectionDetailNest
 
-from .CollectionListingFilter import CollectionListingFilter
-
 from .Page import Page
+
+from .CollectionListingFilter import CollectionListingFilter
 
 
 class GetCollectionListingResponse(BaseSchema):
@@ -18,8 +18,8 @@ class GetCollectionListingResponse(BaseSchema):
     
     items = fields.List(fields.Nested(GetCollectionDetailNest, required=False), required=False)
     
-    filters = fields.Nested(CollectionListingFilter, required=False)
-    
     page = fields.Nested(Page, required=False)
+    
+    filters = fields.Nested(CollectionListingFilter, required=False)
     
 

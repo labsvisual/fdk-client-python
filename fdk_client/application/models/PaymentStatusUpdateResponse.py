@@ -16,9 +16,9 @@ class PaymentStatusUpdateResponse(BaseSchema):
     # Payment swagger.json
 
     
-    retry = fields.Boolean(required=False)
-    
     aggregator_name = fields.Str(required=False)
+    
+    retry = fields.Boolean(required=False)
     
     status = fields.Str(required=False)
     

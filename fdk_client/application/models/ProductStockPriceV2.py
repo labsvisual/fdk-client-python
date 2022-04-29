@@ -16,9 +16,9 @@ class ProductStockPriceV2(BaseSchema):
     # Catalog swagger.json
 
     
-    currency = fields.Str(required=False)
-    
     marked = fields.Float(required=False)
+    
+    currency = fields.Str(required=False)
     
     effective = fields.Float(required=False)
     

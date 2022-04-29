@@ -14,8 +14,8 @@ class DeleteAddressResponse(BaseSchema):
     # Cart swagger.json
 
     
-    id = fields.Str(required=False)
-    
     is_deleted = fields.Boolean(required=False)
+    
+    id = fields.Str(required=False)
     
 

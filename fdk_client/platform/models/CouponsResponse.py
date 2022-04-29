@@ -5,17 +5,17 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-from .CouponAdd import CouponAdd
-
 from .Page import Page
+
+from .CouponAdd import CouponAdd
 
 
 class CouponsResponse(BaseSchema):
     # Cart swagger.json
 
     
-    items = fields.Nested(CouponAdd, required=False)
-    
     page = fields.Nested(Page, required=False)
+    
+    items = fields.Nested(CouponAdd, required=False)
     
 
