@@ -20,10 +20,10 @@ class ProductFiltersKey(BaseSchema):
     
     kind = fields.Str(required=False)
     
+    name = fields.Str(required=False)
+    
     display = fields.Str(required=False)
     
     logo = fields.Str(required=False)
-    
-    name = fields.Str(required=False)
     
 

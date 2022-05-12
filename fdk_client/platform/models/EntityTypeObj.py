@@ -10,12 +10,12 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-class DocumentsObj(BaseSchema):
-    # CompanyProfile swagger.json
+class EntityTypeObj(BaseSchema):
+    # AuditTrail swagger.json
 
     
-    verified = fields.Int(required=False)
+    entity_value = fields.Str(required=False)
     
-    pending = fields.Int(required=False)
+    display_name = fields.Str(required=False)
     
 

@@ -9,9 +9,9 @@ from .ImageUrls import ImageUrls
 
 from .ProductListingAction import ProductListingAction
 
-
-
 from .SecondLevelChild import SecondLevelChild
+
+
 
 
 
@@ -28,9 +28,9 @@ class Child(BaseSchema):
     
     action = fields.Nested(ProductListingAction, required=False)
     
-    _custom_json = fields.Dict(required=False)
-    
     childs = fields.List(fields.Nested(SecondLevelChild, required=False), required=False)
+    
+    _custom_json = fields.Dict(required=False)
     
     name = fields.Str(required=False)
     
