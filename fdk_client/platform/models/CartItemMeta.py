@@ -14,8 +14,8 @@ class CartItemMeta(BaseSchema):
     # Cart swagger.json
 
     
-    group_id = fields.Str(required=False)
-    
     primary_item = fields.Boolean(required=False)
+    
+    group_id = fields.Str(required=False)
     
 

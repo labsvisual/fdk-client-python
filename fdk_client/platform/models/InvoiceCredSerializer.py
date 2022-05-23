@@ -16,10 +16,10 @@ class InvoiceCredSerializer(BaseSchema):
     # Catalog swagger.json
 
     
+    username = fields.Str(required=False)
+    
     password = fields.Str(required=False)
     
     enabled = fields.Boolean(required=False)
-    
-    username = fields.Str(required=False)
     
 

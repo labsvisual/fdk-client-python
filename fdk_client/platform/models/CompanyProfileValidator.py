@@ -22,14 +22,14 @@ class CompanyProfileValidator:
         company_id = fields.Str(required=False)
          
     
-    class getBrand(BaseSchema):
+    class editBrand(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         brand_id = fields.Str(required=False)
          
     
-    class editBrand(BaseSchema):
+    class getBrand(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -77,14 +77,14 @@ class CompanyProfileValidator:
         company_id = fields.Str(required=False)
          
     
-    class getLocationDetail(BaseSchema):
+    class updateLocation(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         location_id = fields.Str(required=False)
          
     
-    class updateLocation(BaseSchema):
+    class getLocationDetail(BaseSchema):
         
         company_id = fields.Str(required=False)
         

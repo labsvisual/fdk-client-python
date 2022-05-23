@@ -20,3 +20,10 @@ class FDKOAuthCodeError(Exception):
     def __init__(self, message=""):
         """Initialize function __init__."""
         super(FDKOAuthCodeError, self).__init__(message)
+
+
+class FDKClientValidationError(Exception):
+    """FDK Validation Exception."""
+    def __init__(self, message=""):
+        """Initialize function __init__."""
+        super(FDKClientValidationError, self).__init__(message)

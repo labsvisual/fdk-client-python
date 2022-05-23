@@ -20,14 +20,14 @@ class CouponValidity(BaseSchema):
     # Cart swagger.json
 
     
-    valid = fields.Boolean(required=False)
-    
-    display_message_en = fields.Str(required=False)
+    title = fields.Str(required=False)
     
     discount = fields.Float(required=False)
     
     code = fields.Str(required=False)
     
-    title = fields.Str(required=False)
+    display_message_en = fields.Str(required=False)
+    
+    valid = fields.Boolean(required=False)
     
 

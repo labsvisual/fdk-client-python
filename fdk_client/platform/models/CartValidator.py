@@ -64,6 +64,63 @@ class CartValidator:
         id = fields.Str(required=False)
          
     
+    class getPromotions(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        page_no = fields.Int(required=False)
+        
+        page_size = fields.Int(required=False)
+        
+        q = fields.Str(required=False)
+        
+        is_active = fields.Boolean(required=False)
+        
+        promo_group = fields.Str(required=False)
+        
+        promotion_type = fields.Str(required=False)
+        
+        fp_panel = fields.Str(required=False)
+        
+        promotion_id = fields.Str(required=False)
+         
+    
+    class createPromotion(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+         
+    
+    class getPromotionById(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class updatePromotion(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class updatePromotionPartially(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
     class fetchAndvalidateCartItems(BaseSchema):
         
         company_id = fields.Str(required=False)
