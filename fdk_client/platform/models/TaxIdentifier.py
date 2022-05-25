@@ -1,4 +1,4 @@
-"""Application Models."""
+"""Platform Models."""
 
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
@@ -12,14 +12,14 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-class ProductSortOn(BaseSchema):
+class TaxIdentifier(BaseSchema):
     # Catalog swagger.json
 
     
-    name = fields.Str(required=False)
+    hsn_code_id = fields.Str(required=False)
     
-    value = fields.Str(required=False)
+    hsn_code = fields.Str(required=False)
     
-    is_selected = fields.Boolean(required=False)
+    reporting_hsn = fields.Str(required=False)
     
 

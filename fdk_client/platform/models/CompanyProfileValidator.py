@@ -7,12 +7,12 @@ from ..models.BaseSchema import BaseSchema
 
 class CompanyProfileValidator:
     
-    class cbsOnboardGet(BaseSchema):
+    class updateCompany(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class updateCompany(BaseSchema):
+    class cbsOnboardGet(BaseSchema):
         
         company_id = fields.Str(required=False)
          
@@ -22,13 +22,6 @@ class CompanyProfileValidator:
         company_id = fields.Str(required=False)
          
     
-    class editBrand(BaseSchema):
-        
-        company_id = fields.Str(required=False)
-        
-        brand_id = fields.Str(required=False)
-         
-    
     class getBrand(BaseSchema):
         
         company_id = fields.Str(required=False)
@@ -36,7 +29,19 @@ class CompanyProfileValidator:
         brand_id = fields.Str(required=False)
          
     
+    class editBrand(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        brand_id = fields.Str(required=False)
+         
+    
     class createBrand(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+         
+    
+    class createCompanyBrandMapping(BaseSchema):
         
         company_id = fields.Str(required=False)
          
@@ -52,7 +57,7 @@ class CompanyProfileValidator:
         q = fields.Str(required=False)
          
     
-    class createCompanyBrandMapping(BaseSchema):
+    class createLocation(BaseSchema):
         
         company_id = fields.Str(required=False)
          
@@ -72,19 +77,14 @@ class CompanyProfileValidator:
         page_size = fields.Int(required=False)
          
     
-    class createLocation(BaseSchema):
-        
-        company_id = fields.Str(required=False)
-         
-    
-    class updateLocation(BaseSchema):
+    class getLocationDetail(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         location_id = fields.Str(required=False)
          
     
-    class getLocationDetail(BaseSchema):
+    class updateLocation(BaseSchema):
         
         company_id = fields.Str(required=False)
         

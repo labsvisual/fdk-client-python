@@ -12,14 +12,14 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-class ProductBulkAssets(BaseSchema):
-    # Catalog swagger.json
+class CompanyTax(BaseSchema):
+    # CompanyProfile swagger.json
 
     
-    url = fields.Str(required=False)
+    effective_date = fields.Str(required=False)
     
-    user = fields.Dict(required=False)
+    rate = fields.Float(required=False)
     
-    company_id = fields.Int(required=False)
+    enable = fields.Boolean(required=False)
     
 

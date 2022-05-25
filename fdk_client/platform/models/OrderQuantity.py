@@ -18,8 +18,8 @@ class OrderQuantity(BaseSchema):
     
     minimum = fields.Int(required=False)
     
-    is_set = fields.Boolean(required=False)
-    
     maximum = fields.Int(required=False)
+    
+    is_set = fields.Boolean(required=False)
     
 

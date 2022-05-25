@@ -16,10 +16,10 @@ class UsesRemaining(BaseSchema):
     # Cart swagger.json
 
     
-    user = fields.Int(required=False)
+    app = fields.Int(required=False)
     
     total = fields.Int(required=False)
     
-    app = fields.Int(required=False)
+    user = fields.Int(required=False)
     
 

@@ -18,8 +18,8 @@ class OpenApiErrorResponse(BaseSchema):
     
     errors = fields.Dict(required=False)
     
-    message = fields.Str(required=False)
-    
     success = fields.Boolean(required=False)
+    
+    message = fields.Str(required=False)
     
 

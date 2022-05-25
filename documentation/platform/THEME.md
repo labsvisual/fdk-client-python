@@ -35434,6 +35434,7 @@ Success. Refer `ThemesSchema` for more details.
  | Properties | Type | Nullable | Description |
  | ---------- | ---- | -------- | ----------- |
  | link | String? |  yes  |  |
+ | links | ArrayList<String>? |  yes  |  |
 
 ---
 
@@ -35456,6 +35457,7 @@ Success. Refer `ThemesSchema` for more details.
  | Properties | Type | Nullable | Description |
  | ---------- | ---- | -------- | ----------- |
  | link | String? |  yes  |  |
+ | links | ArrayList<String>? |  yes  |  |
 
 ---
 

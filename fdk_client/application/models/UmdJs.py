@@ -8,10 +8,14 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 class UmdJs(BaseSchema):
     # Theme swagger.json
 
     
     link = fields.Str(required=False)
+    
+    links = fields.List(fields.Str(required=False), required=False)
     
 
