@@ -18,8 +18,8 @@ class AttachCardsResponse(BaseSchema):
     
     data = fields.Dict(required=False)
     
-    success = fields.Boolean(required=False)
-    
     message = fields.Str(required=False)
+    
+    success = fields.Boolean(required=False)
     
 

@@ -22,12 +22,12 @@ class TransferItemsDetails(BaseSchema):
     
     name = fields.Str(required=False)
     
-    display_name = fields.Str(required=False)
-    
-    id = fields.Int(required=False)
+    logo_small = fields.Str(required=False)
     
     logo_large = fields.Str(required=False)
     
-    logo_small = fields.Str(required=False)
+    id = fields.Int(required=False)
+    
+    display_name = fields.Str(required=False)
     
 

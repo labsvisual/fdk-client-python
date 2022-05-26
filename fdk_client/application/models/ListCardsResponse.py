@@ -18,8 +18,8 @@ class ListCardsResponse(BaseSchema):
     
     data = fields.List(fields.Nested(Card, required=False), required=False)
     
-    success = fields.Boolean(required=False)
-    
     message = fields.Str(required=False)
+    
+    success = fields.Boolean(required=False)
     
 

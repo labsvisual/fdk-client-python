@@ -24,7 +24,7 @@ class ThirdLevelChild(BaseSchema):
     # Catalog swagger.json
 
     
-    childs = fields.List(fields.Dict(required=False), required=False)
+    slug = fields.Str(required=False)
     
     name = fields.Str(required=False)
     
@@ -32,10 +32,10 @@ class ThirdLevelChild(BaseSchema):
     
     banners = fields.Nested(ImageUrls, required=False)
     
+    childs = fields.List(fields.Dict(required=False), required=False)
+    
     _custom_json = fields.Dict(required=False)
     
     uid = fields.Int(required=False)
-    
-    slug = fields.Str(required=False)
     
 
