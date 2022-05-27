@@ -16,9 +16,9 @@ class OptinCompanyMetrics(BaseSchema):
     # Catalog swagger.json
 
     
-    store = fields.Int(required=False)
-    
     company = fields.Str(required=False)
+    
+    store = fields.Int(required=False)
     
     brand = fields.Int(required=False)
     

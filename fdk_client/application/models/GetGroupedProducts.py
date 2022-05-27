@@ -11,17 +11,17 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
+
+
+
+
+
+
+
+
 from .Products import Products
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -30,17 +30,9 @@ class GetGroupedProducts(BaseSchema):
     # Catalog swagger.json
 
     
-    company_id = fields.Int(required=False)
-    
-    name = fields.Str(required=False)
-    
-    slug = fields.Str(required=False)
-    
-    products = fields.List(fields.Nested(Products, required=False), required=False)
-    
     meta = fields.Dict(required=False)
     
-    choice = fields.Str(required=False)
+    company_id = fields.Int(required=False)
     
     page_visibility = fields.List(fields.Str(required=False), required=False)
     
@@ -49,5 +41,13 @@ class GetGroupedProducts(BaseSchema):
     active = fields.Boolean(required=False)
     
     same_store_assignment = fields.Boolean(required=False)
+    
+    name = fields.Str(required=False)
+    
+    slug = fields.Str(required=False)
+    
+    products = fields.List(fields.Nested(Products, required=False), required=False)
+    
+    choice = fields.Str(required=False)
     
 

@@ -20,9 +20,9 @@ class CompanyStore(BaseSchema):
     
     business_type = fields.Str(required=False)
     
-    company_type = fields.Str(required=False)
-    
     name = fields.Str(required=False)
+    
+    company_type = fields.Str(required=False)
     
     uid = fields.Int(required=False)
     

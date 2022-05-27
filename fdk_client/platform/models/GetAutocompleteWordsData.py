@@ -22,12 +22,12 @@ class GetAutocompleteWordsData(BaseSchema):
     
     app_id = fields.Str(required=False)
     
-    results = fields.List(fields.Dict(required=False), required=False)
-    
     words = fields.List(fields.Str(required=False), required=False)
     
-    uid = fields.Str(required=False)
+    results = fields.List(fields.Dict(required=False), required=False)
     
     _custom_json = fields.Dict(required=False)
+    
+    uid = fields.Str(required=False)
     
 

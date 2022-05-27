@@ -16,10 +16,10 @@ class CustomOrder(BaseSchema):
     # Catalog swagger.json
 
     
-    manufacturing_time = fields.Int(required=False)
-    
     manufacturing_time_unit = fields.Str(required=False)
     
     is_custom_order = fields.Boolean(required=False)
+    
+    manufacturing_time = fields.Int(required=False)
     
 

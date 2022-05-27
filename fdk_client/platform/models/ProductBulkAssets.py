@@ -16,10 +16,10 @@ class ProductBulkAssets(BaseSchema):
     # Catalog swagger.json
 
     
+    url = fields.Str(required=False)
+    
     company_id = fields.Int(required=False)
     
     user = fields.Dict(required=False)
-    
-    url = fields.Str(required=False)
     
 
