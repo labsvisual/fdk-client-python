@@ -14,8 +14,8 @@ class GeoLocation(BaseSchema):
     # Cart swagger.json
 
     
-    latitude = fields.Float(required=False)
-    
     longitude = fields.Float(required=False)
+    
+    latitude = fields.Float(required=False)
     
 

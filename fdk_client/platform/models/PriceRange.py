@@ -14,8 +14,8 @@ class PriceRange(BaseSchema):
     # Cart swagger.json
 
     
-    min = fields.Int(required=False)
-    
     max = fields.Int(required=False)
+    
+    min = fields.Int(required=False)
     
 

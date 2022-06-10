@@ -10,16 +10,12 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-
-
-class CompanyTax(BaseSchema):
+class CompanySocialAccounts(BaseSchema):
     # CompanyProfile swagger.json
 
     
-    enable = fields.Boolean(required=False)
+    name = fields.Str(required=False)
     
-    rate = fields.Float(required=False)
-    
-    effective_date = fields.Str(required=False)
+    url = fields.Str(required=False)
     
 

@@ -40,7 +40,7 @@ class ShippingAddress(BaseSchema):
     # Cart swagger.json
 
     
-    address_type = fields.Str(required=False)
+    landmark = fields.Str(required=False)
     
     city = fields.Str(required=False)
     
@@ -48,26 +48,26 @@ class ShippingAddress(BaseSchema):
     
     meta = fields.Dict(required=False)
     
-    area_code = fields.Str(required=False)
+    country = fields.Str(required=False)
     
     area_code_slug = fields.Str(required=False)
     
-    name = fields.Str(required=False)
+    phone = fields.Int(required=False)
     
-    country = fields.Str(required=False)
+    area_code = fields.Str(required=False)
     
     state = fields.Str(required=False)
     
-    email = fields.Str(required=False)
-    
-    phone = fields.Int(required=False)
+    pincode = fields.Int(required=False)
     
     country_code = fields.Str(required=False)
     
-    landmark = fields.Str(required=False)
-    
     area = fields.Str(required=False)
     
-    pincode = fields.Int(required=False)
+    address_type = fields.Str(required=False)
+    
+    email = fields.Str(required=False)
+    
+    name = fields.Str(required=False)
     
 

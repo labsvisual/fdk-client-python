@@ -22,12 +22,12 @@ class CouponValidity(BaseSchema):
     
     code = fields.Str(required=False)
     
+    display_message_en = fields.Str(required=False)
+    
     valid = fields.Boolean(required=False)
     
     discount = fields.Float(required=False)
     
     title = fields.Str(required=False)
-    
-    display_message_en = fields.Str(required=False)
     
 

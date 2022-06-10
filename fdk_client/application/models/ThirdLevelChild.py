@@ -5,9 +5,9 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
+
+
 from .ProductListingAction import ProductListingAction
-
-
 
 
 
@@ -24,9 +24,9 @@ class ThirdLevelChild(BaseSchema):
     # Catalog swagger.json
 
     
-    action = fields.Nested(ProductListingAction, required=False)
-    
     name = fields.Str(required=False)
+    
+    action = fields.Nested(ProductListingAction, required=False)
     
     childs = fields.List(fields.Dict(required=False), required=False)
     

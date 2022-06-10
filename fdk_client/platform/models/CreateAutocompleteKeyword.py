@@ -5,11 +5,11 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-
-
-
-
 from .AutocompleteResult import AutocompleteResult
+
+
+
+
 
 
 
@@ -20,14 +20,14 @@ class CreateAutocompleteKeyword(BaseSchema):
     # Catalog swagger.json
 
     
+    results = fields.List(fields.Nested(AutocompleteResult, required=False), required=False)
+    
     app_id = fields.Str(required=False)
     
-    words = fields.List(fields.Str(required=False), required=False)
-    
-    results = fields.List(fields.Nested(AutocompleteResult, required=False), required=False)
+    is_active = fields.Boolean(required=False)
     
     _custom_json = fields.Dict(required=False)
     
-    is_active = fields.Boolean(required=False)
+    words = fields.List(fields.Str(required=False), required=False)
     
 

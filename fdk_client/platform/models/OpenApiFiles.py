@@ -14,8 +14,8 @@ class OpenApiFiles(BaseSchema):
     # Cart swagger.json
 
     
-    key = fields.Str(required=False)
-    
     values = fields.List(fields.Str(required=False), required=False)
+    
+    key = fields.Str(required=False)
     
 
