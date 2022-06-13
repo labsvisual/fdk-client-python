@@ -18,8 +18,8 @@ class CollectionListingFilterType(BaseSchema):
     
     name = fields.Str(required=False)
     
-    display = fields.Str(required=False)
-    
     is_selected = fields.Boolean(required=False)
+    
+    display = fields.Str(required=False)
     
 

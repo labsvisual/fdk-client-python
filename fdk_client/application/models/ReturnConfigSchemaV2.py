@@ -18,8 +18,8 @@ class ReturnConfigSchemaV2(BaseSchema):
     
     returnable = fields.Boolean(required=False)
     
-    time = fields.Int(required=False)
-    
     unit = fields.Str(required=False)
+    
+    time = fields.Int(required=False)
     
 

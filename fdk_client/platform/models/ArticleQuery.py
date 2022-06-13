@@ -18,8 +18,8 @@ class ArticleQuery(BaseSchema):
     
     size = fields.Str(required=False)
     
-    item_id = fields.Int(required=False)
-    
     ignored_stores = fields.List(fields.Int(required=False), required=False)
+    
+    item_id = fields.Int(required=False)
     
 

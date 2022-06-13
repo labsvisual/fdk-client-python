@@ -20,10 +20,10 @@ class AttributeDetail(BaseSchema):
     
     description = fields.Str(required=False)
     
+    logo = fields.Str(required=False)
+    
     key = fields.Str(required=False)
     
     display = fields.Str(required=False)
-    
-    logo = fields.Str(required=False)
     
 
