@@ -10,6 +10,8 @@ from .StatusesBody import StatusesBody
 
 
 
+
+
 class ShipmentStatusUpdateBody(BaseSchema):
     # Order swagger.json
 
@@ -17,5 +19,7 @@ class ShipmentStatusUpdateBody(BaseSchema):
     statuses = fields.List(fields.Nested(StatusesBody, required=False), required=False)
     
     force_transition = fields.Boolean(required=False)
+    
+    task = fields.Boolean(required=False)
     
 

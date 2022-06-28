@@ -18,9 +18,9 @@ class AggregatorRoute(BaseSchema):
     # Payment swagger.json
 
     
-    api_link = fields.Str(required=False)
-    
     data = fields.Dict(required=False)
+    
+    api_link = fields.Str(required=False)
     
     payment_flow = fields.Str(required=False)
     

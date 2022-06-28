@@ -9,9 +9,9 @@ from ..models.BaseSchema import BaseSchema
 
 from .Media import Media
 
-
-
 from .ImageUrls import ImageUrls
+
+
 
 
 class CategoryMetaResponse(BaseSchema):
@@ -22,8 +22,8 @@ class CategoryMetaResponse(BaseSchema):
     
     logo = fields.Nested(Media, required=False)
     
-    name = fields.Str(required=False)
-    
     banners = fields.Nested(ImageUrls, required=False)
+    
+    name = fields.Str(required=False)
     
 

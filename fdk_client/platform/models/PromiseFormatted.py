@@ -14,8 +14,8 @@ class PromiseFormatted(BaseSchema):
     # Cart swagger.json
 
     
-    max = fields.Str(required=False)
-    
     min = fields.Str(required=False)
+    
+    max = fields.Str(required=False)
     
 

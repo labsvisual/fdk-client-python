@@ -10,9 +10,13 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 class Timestamp(BaseSchema):
     # Order swagger.json
 
+    
+    show_promise = fields.Boolean(required=False)
     
     min = fields.Str(required=False)
     

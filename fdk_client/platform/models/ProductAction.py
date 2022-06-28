@@ -7,9 +7,9 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-
-
 from .ActionQuery import ActionQuery
+
+
 
 
 class ProductAction(BaseSchema):
@@ -18,8 +18,8 @@ class ProductAction(BaseSchema):
     
     type = fields.Str(required=False)
     
-    url = fields.Str(required=False)
-    
     query = fields.Nested(ActionQuery, required=False)
+    
+    url = fields.Str(required=False)
     
 

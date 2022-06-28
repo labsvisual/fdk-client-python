@@ -11,6 +11,10 @@ class LogisticValidator:
         
         pass 
     
+    class getPincodeZones(BaseSchema):
+        
+        pass 
+    
     class getPincodeCity(BaseSchema):
         
         pincode = fields.Str(required=False)

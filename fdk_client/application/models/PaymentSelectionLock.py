@@ -16,9 +16,9 @@ class PaymentSelectionLock(BaseSchema):
     # Cart swagger.json
 
     
-    default_options = fields.Str(required=False)
-    
     payment_identifier = fields.Str(required=False)
+    
+    default_options = fields.Str(required=False)
     
     enabled = fields.Boolean(required=False)
     

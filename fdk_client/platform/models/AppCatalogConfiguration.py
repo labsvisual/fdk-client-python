@@ -7,11 +7,11 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
+
+
 from .ConfigurationListing import ConfigurationListing
-
-
-
-
 
 
 
@@ -24,11 +24,11 @@ class AppCatalogConfiguration(BaseSchema):
     
     config_type = fields.Str(required=False)
     
-    listing = fields.Nested(ConfigurationListing, required=False)
-    
     id = fields.Str(required=False)
     
     app_id = fields.Str(required=False)
+    
+    listing = fields.Nested(ConfigurationListing, required=False)
     
     config_id = fields.Str(required=False)
     
