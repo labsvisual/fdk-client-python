@@ -14,8 +14,8 @@ class SeoDetail(BaseSchema):
     # Catalog swagger.json
 
     
-    description = fields.Str(required=False)
-    
     title = fields.Str(required=False)
+    
+    description = fields.Str(required=False)
     
 

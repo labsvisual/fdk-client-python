@@ -7,9 +7,9 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-
-
 from .PaymentGatewayConfig import PaymentGatewayConfig
+
+
 
 
 class PaymentGatewayConfigRequest(BaseSchema):
@@ -18,8 +18,8 @@ class PaymentGatewayConfigRequest(BaseSchema):
     
     app_id = fields.Str(required=False)
     
-    is_active = fields.Boolean(required=False)
-    
     aggregator_name = fields.Nested(PaymentGatewayConfig, required=False)
+    
+    is_active = fields.Boolean(required=False)
     
 

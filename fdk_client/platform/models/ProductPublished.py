@@ -14,8 +14,8 @@ class ProductPublished(BaseSchema):
     # Catalog swagger.json
 
     
-    product_online_date = fields.Int(required=False)
-    
     is_set = fields.Boolean(required=False)
+    
+    product_online_date = fields.Int(required=False)
     
 

@@ -5,37 +5,37 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-
-
-
-
-from .ImageUrls import ImageUrls
-
-
-
 from .Action import Action
+
+
+
+
 
 
 
 from .ThirdLevelChild import ThirdLevelChild
 
 
+
+from .ImageUrls import ImageUrls
+
+
 class SecondLevelChild(BaseSchema):
     # Catalog swagger.json
 
+    
+    action = fields.Nested(Action, required=False)
     
     slug = fields.Str(required=False)
     
     _custom_json = fields.Dict(required=False)
     
-    banners = fields.Nested(ImageUrls, required=False)
-    
     uid = fields.Int(required=False)
     
-    action = fields.Nested(Action, required=False)
+    childs = fields.List(fields.Nested(ThirdLevelChild, required=False), required=False)
     
     name = fields.Str(required=False)
     
-    childs = fields.List(fields.Nested(ThirdLevelChild, required=False), required=False)
+    banners = fields.Nested(ImageUrls, required=False)
     
 

@@ -7,9 +7,9 @@ from ..models.BaseSchema import BaseSchema
 
 from .DisplayMetaDict import DisplayMetaDict
 
+
+
 from .DisplayMetaDict import DisplayMetaDict
-
-
 
 
 
@@ -22,11 +22,11 @@ class DisplayMeta(BaseSchema):
     # Cart swagger.json
 
     
-    remove = fields.Nested(DisplayMetaDict, required=False)
-    
     apply = fields.Nested(DisplayMetaDict, required=False)
     
     title = fields.Str(required=False)
+    
+    remove = fields.Nested(DisplayMetaDict, required=False)
     
     subtitle = fields.Str(required=False)
     

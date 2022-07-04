@@ -18,12 +18,12 @@ class DiscountRule(BaseSchema):
     # Cart swagger.json
 
     
-    buy_condition = fields.Str(required=False)
+    discount_type = fields.Str(required=False)
     
     item_criteria = fields.Nested(ItemCriteria, required=False)
     
     offer = fields.Nested(DiscountOffer, required=False)
     
-    discount_type = fields.Str(required=False)
+    buy_condition = fields.Str(required=False)
     
 
