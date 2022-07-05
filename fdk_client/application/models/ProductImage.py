@@ -18,8 +18,8 @@ class ProductImage(BaseSchema):
     
     secure_url = fields.Str(required=False)
     
-    url = fields.Str(required=False)
-    
     aspect_ratio = fields.Str(required=False)
+    
+    url = fields.Str(required=False)
     
 

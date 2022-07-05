@@ -26,8 +26,8 @@ class Price1(BaseSchema):
     
     max_marked = fields.Float(required=False)
     
-    currency = fields.Str(required=False)
-    
     max_effective = fields.Float(required=False)
+    
+    currency = fields.Str(required=False)
     
 

@@ -16,9 +16,9 @@ class OpenApiErrorResponse(BaseSchema):
     # Cart swagger.json
 
     
-    errors = fields.Dict(required=False)
-    
     message = fields.Str(required=False)
+    
+    errors = fields.Dict(required=False)
     
     success = fields.Boolean(required=False)
     

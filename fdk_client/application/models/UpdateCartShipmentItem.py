@@ -16,10 +16,10 @@ class UpdateCartShipmentItem(BaseSchema):
     # PosCart swagger.json
 
     
+    article_uid = fields.Str(required=False)
+    
     shipment_type = fields.Str(required=False)
     
     quantity = fields.Int(required=False)
-    
-    article_uid = fields.Str(required=False)
     
 

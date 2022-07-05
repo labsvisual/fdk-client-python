@@ -24,14 +24,14 @@ class AppliedPromotion(BaseSchema):
     
     mrp_promotion = fields.Boolean(required=False)
     
-    article_quantity = fields.Int(required=False)
-    
-    promotion_type = fields.Str(required=False)
-    
     amount = fields.Float(required=False)
     
     offer_text = fields.Str(required=False)
     
+    article_quantity = fields.Int(required=False)
+    
     promo_id = fields.Str(required=False)
+    
+    promotion_type = fields.Str(required=False)
     
 

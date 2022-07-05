@@ -14,8 +14,8 @@ class CollectionBadge(BaseSchema):
     # Catalog swagger.json
 
     
-    color = fields.Str(required=False)
-    
     text = fields.Str(required=False)
+    
+    color = fields.Str(required=False)
     
 

@@ -14,8 +14,8 @@ class PromotionDateMeta(BaseSchema):
     # Cart swagger.json
 
     
-    created_on = fields.Str(required=False)
-    
     modified_on = fields.Str(required=False)
+    
+    created_on = fields.Str(required=False)
     
 

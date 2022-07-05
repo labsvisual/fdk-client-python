@@ -20,11 +20,11 @@ class ProductVariantListingResponse(BaseSchema):
     # Catalog swagger.json
 
     
-    total = fields.Int(required=False)
+    display_type = fields.Str(required=False)
     
     key = fields.Str(required=False)
     
-    display_type = fields.Str(required=False)
+    total = fields.Int(required=False)
     
     header = fields.Str(required=False)
     
