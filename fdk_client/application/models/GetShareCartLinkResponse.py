@@ -14,8 +14,8 @@ class GetShareCartLinkResponse(BaseSchema):
     # Cart swagger.json
 
     
-    share_url = fields.Str(required=False)
-    
     token = fields.Str(required=False)
+    
+    share_url = fields.Str(required=False)
     
 

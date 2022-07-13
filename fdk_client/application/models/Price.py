@@ -22,8 +22,8 @@ class Price(BaseSchema):
     
     max = fields.Float(required=False)
     
-    currency_code = fields.Str(required=False)
-    
     min = fields.Float(required=False)
+    
+    currency_code = fields.Str(required=False)
     
 

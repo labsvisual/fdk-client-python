@@ -20,10 +20,10 @@ class OpenApiCheckoutResponse(BaseSchema):
     
     message = fields.Str(required=False)
     
-    order_id = fields.Str(required=False)
+    success = fields.Boolean(required=False)
     
     order_ref_id = fields.Str(required=False)
     
-    success = fields.Boolean(required=False)
+    order_id = fields.Str(required=False)
     
 

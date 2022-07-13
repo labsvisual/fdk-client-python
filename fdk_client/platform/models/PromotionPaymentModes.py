@@ -16,10 +16,10 @@ class PromotionPaymentModes(BaseSchema):
     # Cart swagger.json
 
     
-    type = fields.Str(required=False)
+    codes = fields.List(fields.Str(required=False), required=False)
     
     uses = fields.Nested(PaymentAllowValue1, required=False)
     
-    codes = fields.List(fields.Str(required=False), required=False)
+    type = fields.Str(required=False)
     
 

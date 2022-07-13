@@ -18,8 +18,8 @@ class CreditDetail(BaseSchema):
     
     is_registered = fields.Boolean(required=False)
     
-    status = fields.Boolean(required=False)
-    
     signup_url = fields.Str(required=False)
+    
+    status = fields.Boolean(required=False)
     
 

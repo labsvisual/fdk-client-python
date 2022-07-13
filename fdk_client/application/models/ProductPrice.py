@@ -24,14 +24,14 @@ class ProductPrice(BaseSchema):
     
     selling = fields.Float(required=False)
     
+    marked = fields.Float(required=False)
+    
     add_on = fields.Float(required=False)
     
-    marked = fields.Float(required=False)
+    currency_symbol = fields.Str(required=False)
     
     currency_code = fields.Str(required=False)
     
     effective = fields.Float(required=False)
-    
-    currency_symbol = fields.Str(required=False)
     
 

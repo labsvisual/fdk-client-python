@@ -16,10 +16,10 @@ class AttachCardsResponse(BaseSchema):
     # Payment swagger.json
 
     
+    message = fields.Str(required=False)
+    
     data = fields.Dict(required=False)
     
     success = fields.Boolean(required=False)
-    
-    message = fields.Str(required=False)
     
 

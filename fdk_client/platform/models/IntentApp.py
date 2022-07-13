@@ -9,9 +9,9 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 from .PaymentModeLogo import PaymentModeLogo
-
-
 
 
 class IntentApp(BaseSchema):
@@ -22,8 +22,8 @@ class IntentApp(BaseSchema):
     
     package_name = fields.Str(required=False)
     
-    logos = fields.Nested(PaymentModeLogo, required=False)
-    
     code = fields.Str(required=False)
+    
+    logos = fields.Nested(PaymentModeLogo, required=False)
     
 

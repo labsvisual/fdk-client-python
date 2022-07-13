@@ -18,12 +18,12 @@ class UpdateAddressResponse(BaseSchema):
     # Cart swagger.json
 
     
-    id = fields.Str(required=False)
+    is_updated = fields.Boolean(required=False)
     
     is_default_address = fields.Boolean(required=False)
     
-    is_updated = fields.Boolean(required=False)
-    
     success = fields.Boolean(required=False)
+    
+    id = fields.Str(required=False)
     
 
