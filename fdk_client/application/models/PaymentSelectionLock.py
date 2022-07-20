@@ -18,8 +18,8 @@ class PaymentSelectionLock(BaseSchema):
     
     default_options = fields.Str(required=False)
     
-    payment_identifier = fields.Str(required=False)
-    
     enabled = fields.Boolean(required=False)
+    
+    payment_identifier = fields.Str(required=False)
     
 

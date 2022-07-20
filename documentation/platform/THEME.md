@@ -29,6 +29,7 @@ Responsible for themes
 * [unpublishTheme](#unpublishtheme)
 * [archiveTheme](#archivetheme)
 * [unarchiveTheme](#unarchivetheme)
+* [getThemeLastModified](#getthemelastmodified)
 
 
 
@@ -35067,6 +35068,44 @@ Success. Refer `ThemesSchema` for more details.
 
 </details>
 
+
+
+
+
+
+
+
+
+---
+
+
+### getThemeLastModified
+Fetch last modified timestamp
+
+
+
+
+```python
+try:
+    result = await client.application("<APPLICATION_ID>").theme.getThemeLastModified(themeId=themeId)
+    # use result
+except Exception as e:
+    print(e)
+```
+
+
+
+
+
+| Argument  |  Type  | Required | Description |
+| --------- | -----  | -------- | ----------- | 
+| themeId | String | yes | ID allotted to the theme. |  
+
+
+
+Use this API to fetch Last-Modified timestamp in header metadata.
+
+*Returned Response:*
 
 
 

@@ -214,3 +214,12 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
+    class getThemeLastModified(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        theme_id = fields.Str(required=False)
+         
+    

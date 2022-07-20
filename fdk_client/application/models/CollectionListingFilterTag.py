@@ -18,8 +18,8 @@ class CollectionListingFilterTag(BaseSchema):
     
     is_selected = fields.Boolean(required=False)
     
-    display = fields.Str(required=False)
-    
     name = fields.Str(required=False)
+    
+    display = fields.Str(required=False)
     
 
