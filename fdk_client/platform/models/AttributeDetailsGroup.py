@@ -30,9 +30,9 @@ class AttributeDetailsGroup(BaseSchema):
     
     unit = fields.Str(required=False)
     
-    priority = fields.Int(required=False)
+    display_type = fields.Str(required=False)
     
-    logo = fields.Str(required=False)
+    priority = fields.Int(required=False)
     
     key = fields.Str(required=False)
     
@@ -40,6 +40,6 @@ class AttributeDetailsGroup(BaseSchema):
     
     is_active = fields.Boolean(required=False)
     
-    display_type = fields.Str(required=False)
+    logo = fields.Str(required=False)
     
 

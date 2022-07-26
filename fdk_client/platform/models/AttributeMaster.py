@@ -24,11 +24,11 @@ class AttributeMaster(BaseSchema):
     
     allowed_values = fields.List(fields.Str(required=False), required=False)
     
-    multi = fields.Boolean(required=False)
+    mandatory = fields.Boolean(required=False)
     
     type = fields.Str(required=False)
     
-    mandatory = fields.Boolean(required=False)
+    multi = fields.Boolean(required=False)
     
     format = fields.Str(required=False)
     

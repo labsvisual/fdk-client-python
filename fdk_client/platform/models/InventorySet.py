@@ -7,12 +7,16 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 from .SizeDistribution import SizeDistribution
 
 
 class InventorySet(BaseSchema):
     # Catalog swagger.json
 
+    
+    name = fields.Str(required=False)
     
     quantity = fields.Int(required=False)
     

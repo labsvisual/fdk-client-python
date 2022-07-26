@@ -24,10 +24,10 @@ class ConfigurationListingSortConfig(BaseSchema):
     
     priority = fields.Int(required=False)
     
-    logo = fields.Str(required=False)
-    
     key = fields.Str(required=False)
     
     is_active = fields.Boolean(required=False)
+    
+    logo = fields.Str(required=False)
     
 

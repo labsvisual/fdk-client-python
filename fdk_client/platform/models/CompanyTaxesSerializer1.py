@@ -18,8 +18,8 @@ class CompanyTaxesSerializer1(BaseSchema):
     
     effective_date = fields.Str(required=False)
     
-    enable = fields.Boolean(required=False)
-    
     rate = fields.Float(required=False)
+    
+    enable = fields.Boolean(required=False)
     
 
