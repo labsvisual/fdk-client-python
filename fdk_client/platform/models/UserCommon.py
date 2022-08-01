@@ -18,8 +18,8 @@ class UserCommon(BaseSchema):
     
     username = fields.Str(required=False)
     
-    company_id = fields.Int(required=False)
-    
     user_id = fields.Str(required=False)
+    
+    company_id = fields.Int(required=False)
     
 

@@ -14,8 +14,8 @@ class FollowPostResponse(BaseSchema):
     # Catalog swagger.json
 
     
-    id = fields.Str(required=False)
-    
     message = fields.Str(required=False)
+    
+    id = fields.Str(required=False)
     
 

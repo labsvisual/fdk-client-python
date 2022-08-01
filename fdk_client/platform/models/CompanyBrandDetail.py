@@ -22,8 +22,8 @@ class CompanyBrandDetail(BaseSchema):
     
     brand_name = fields.Str(required=False)
     
-    company_id = fields.Int(required=False)
-    
     brand_id = fields.Int(required=False)
+    
+    company_id = fields.Int(required=False)
     
 

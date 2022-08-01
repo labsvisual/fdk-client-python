@@ -18,8 +18,8 @@ class Meta(BaseSchema):
     
     headers = fields.Dict(required=False)
     
-    values = fields.List(fields.Dict(required=False), required=False)
-    
     unit = fields.Str(required=False)
+    
+    values = fields.List(fields.Dict(required=False), required=False)
     
 

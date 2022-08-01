@@ -16,6 +16,8 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 class OptInPostRequest(BaseSchema):
     # Catalog swagger.json
 
@@ -27,6 +29,8 @@ class OptInPostRequest(BaseSchema):
     brand_ids = fields.List(fields.Int(required=False), required=False)
     
     opt_level = fields.Str(required=False)
+    
+    company_id = fields.Int(required=False)
     
     enabled = fields.Boolean(required=False)
     

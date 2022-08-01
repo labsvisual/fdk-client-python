@@ -18,8 +18,8 @@ class ConfigurationBucketPoints(BaseSchema):
     
     display = fields.Str(required=False)
     
-    end = fields.Float(required=False)
-    
     start = fields.Float(required=False)
+    
+    end = fields.Float(required=False)
     
 
