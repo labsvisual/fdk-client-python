@@ -165,6 +165,8 @@ class Inventory:
     def __init__(self, config):
         self._conf = config
         self._relativeUrls = {
+            "getConfigByApiKey": "/service/common/inventory/v1.0/company/slingshot",
+            "getApiKey": "/service/common/inventory/v1.0/company/slingshot/apikey",
             "getJobByCode": "/service/common/inventory/v1.0/company/jobs/code/{code}",
             "getJobConfigByIntegrationType": "/service/common/inventory/v1.0/company/job/config",
             "getJobCodesMetrics": "/service/common/inventory/v1.0/company/email/jobCode",
@@ -177,6 +179,68 @@ class Inventory:
 
     async def updateUrls(self, urls):
         self._urls.update(urls)
+    
+    async def getConfigByApiKey(self, apikey=None, body=""):
+        """REST Endpoint that returns all configuration detail of a company
+        :param apikey : Api key : type string
+        """
+        payload = {}
+        
+        if apikey:
+            payload["apikey"] = apikey
+        
+        # Parameter validation
+        schema = InventoryValidator.getConfigByApiKey()
+        schema.dump(schema.load(payload))
+        
+
+        url_with_params = await create_url_with_params(api_url=self._urls["getConfigByApiKey"], proccessed_params="""{"required":[{"name":"apikey","in":"query","description":"Api key","required":true,"schema":{"type":"string"}}],"optional":[],"query":[{"name":"apikey","in":"query","description":"Api key","required":true,"schema":{"type":"string"}}],"headers":[],"path":[]}""", apikey=apikey)
+        query_string = await create_query_string(apikey=apikey)
+        headers = {
+            "User-Agent": self._conf.userAgent,
+            "Accept-Language": self._conf.language,
+            "x-currency-code":   self._conf.currency
+        }
+        for h in self._conf.extraHeaders:
+            headers.update(h)
+        exclude_headers = []
+        for key, val in headers.items():
+            if not key.startswith("x-fp-"):
+                exclude_headers.append(key)
+        return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(urlparse(self._urls["getConfigByApiKey"]).netloc, "get", await create_url_without_domain("/service/common/inventory/v1.0/company/slingshot", apikey=apikey), query_string, headers, body, exclude_headers=exclude_headers), data=body)
+    
+    async def getApiKey(self, user_name=None, password=None, body=""):
+        """REST Endpoint that returns apikey by username by password
+        :param user_name : Integration id : type string
+        :param password : company/store token : type string
+        """
+        payload = {}
+        
+        if user_name:
+            payload["user_name"] = user_name
+        
+        if password:
+            payload["password"] = password
+        
+        # Parameter validation
+        schema = InventoryValidator.getApiKey()
+        schema.dump(schema.load(payload))
+        
+
+        url_with_params = await create_url_with_params(api_url=self._urls["getApiKey"], proccessed_params="""{"required":[{"name":"user_name","in":"query","description":"Integration id","required":true,"schema":{"type":"string"}},{"name":"password","in":"query","description":"company/store token","required":true,"schema":{"type":"string"}}],"optional":[],"query":[{"name":"user_name","in":"query","description":"Integration id","required":true,"schema":{"type":"string"}},{"name":"password","in":"query","description":"company/store token","required":true,"schema":{"type":"string"}}],"headers":[],"path":[]}""", user_name=user_name, password=password)
+        query_string = await create_query_string(user_name=user_name, password=password)
+        headers = {
+            "User-Agent": self._conf.userAgent,
+            "Accept-Language": self._conf.language,
+            "x-currency-code":   self._conf.currency
+        }
+        for h in self._conf.extraHeaders:
+            headers.update(h)
+        exclude_headers = []
+        for key, val in headers.items():
+            if not key.startswith("x-fp-"):
+                exclude_headers.append(key)
+        return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(urlparse(self._urls["getApiKey"]).netloc, "get", await create_url_without_domain("/service/common/inventory/v1.0/company/slingshot/apikey", user_name=user_name, password=password), query_string, headers, body, exclude_headers=exclude_headers), data=body)
     
     async def getJobByCode(self, code=None, body=""):
         """REST Endpoint that returns job config by code

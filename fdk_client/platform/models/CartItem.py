@@ -16,10 +16,10 @@ class CartItem(BaseSchema):
     # Cart swagger.json
 
     
-    quantity = fields.Int(required=False)
+    size = fields.Str(required=False)
     
     product_id = fields.Str(required=False)
     
-    size = fields.Str(required=False)
+    quantity = fields.Int(required=False)
     
 

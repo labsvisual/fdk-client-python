@@ -7,6 +7,18 @@ from ..models.BaseSchema import BaseSchema
 
 class InventoryValidator:
     
+    class getConfigByApiKey(BaseSchema):
+        
+        apikey = fields.Str(required=False)
+         
+    
+    class getApiKey(BaseSchema):
+        
+        user_name = fields.Str(required=False)
+        
+        password = fields.Str(required=False)
+         
+    
     class getJobByCode(BaseSchema):
         
         code = fields.Str(required=False)

@@ -64,6 +64,24 @@ from .EventConfigBase import EventConfigBase
     
 
     
+from .GCompany import GCompany
+    
+from .GStore import GStore
+    
+from .Metum import Metum
+    
+from .ResponseEnvelopeSlingshotConfigurationDetail import ResponseEnvelopeSlingshotConfigurationDetail
+    
+from .SlingshotConfigurationDetail import SlingshotConfigurationDetail
+    
+from .SlingshotIntegration import SlingshotIntegration
+    
+from .StoreData import StoreData
+    
+from .ApikeyModel import ApikeyModel
+    
+from .ResponseEnvelopeApikeyModel import ResponseEnvelopeApikeyModel
+    
 from .DataTresholdDTO import DataTresholdDTO
     
 from .GenericDTO import GenericDTO

@@ -5,9 +5,9 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-
-
 from .Time import Time
+
+
 
 from .Time import Time
 
@@ -18,9 +18,9 @@ class StoreTiming(BaseSchema):
     # Catalog swagger.json
 
     
-    open = fields.Boolean(required=False)
-    
     opening = fields.Nested(Time, required=False)
+    
+    open = fields.Boolean(required=False)
     
     closing = fields.Nested(Time, required=False)
     

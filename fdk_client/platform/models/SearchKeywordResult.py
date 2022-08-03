@@ -14,8 +14,8 @@ class SearchKeywordResult(BaseSchema):
     # Catalog swagger.json
 
     
-    query = fields.Dict(required=False)
-    
     sort_on = fields.Str(required=False)
+    
+    query = fields.Dict(required=False)
     
 

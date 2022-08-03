@@ -7,31 +7,19 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+from .ItemQueryForUserCollection import ItemQueryForUserCollection
 
-
-
-
-
-
-
-
-
+from .CollectionQuery import CollectionQuery
 
 
 class CollectionItemRequest(BaseSchema):
     # Catalog swagger.json
 
     
-    q = fields.Str(required=False)
+    type = fields.Str(required=False)
     
-    page_no = fields.Int(required=False)
+    item = fields.List(fields.Nested(ItemQueryForUserCollection, required=False), required=False)
     
-    page_size = fields.Int(required=False)
-    
-    sort = fields.Str(required=False)
-    
-    department = fields.Str(required=False)
-    
-    variant = fields.Str(required=False)
+    query = fields.List(fields.Nested(CollectionQuery, required=False), required=False)
     
 

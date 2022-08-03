@@ -16,9 +16,9 @@ class UserCommon(BaseSchema):
     # Catalog swagger.json
 
     
-    username = fields.Str(required=False)
-    
     user_id = fields.Str(required=False)
+    
+    username = fields.Str(required=False)
     
     company_id = fields.Int(required=False)
     

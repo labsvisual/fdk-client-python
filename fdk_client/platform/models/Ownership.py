@@ -14,8 +14,8 @@ class Ownership(BaseSchema):
     # Cart swagger.json
 
     
-    payable_category = fields.Str(required=False)
-    
     payable_by = fields.Str(required=False)
+    
+    payable_category = fields.Str(required=False)
     
 

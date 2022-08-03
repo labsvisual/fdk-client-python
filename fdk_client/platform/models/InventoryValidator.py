@@ -7,6 +7,16 @@ from ..models.BaseSchema import BaseSchema
 
 class InventoryValidator:
     
+    class getConfigByCompany(BaseSchema):
+        
+        company_id = fields.Int(required=False)
+         
+    
+    class suppressStores(BaseSchema):
+        
+        company_id = fields.Int(required=False)
+         
+    
     class getJobsByCompany(BaseSchema):
         
         company_id = fields.Int(required=False)

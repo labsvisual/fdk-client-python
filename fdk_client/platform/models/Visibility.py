@@ -14,8 +14,8 @@ class Visibility(BaseSchema):
     # Cart swagger.json
 
     
-    pdp = fields.Boolean(required=False)
-    
     coupon_list = fields.Boolean(required=False)
+    
+    pdp = fields.Boolean(required=False)
     
 

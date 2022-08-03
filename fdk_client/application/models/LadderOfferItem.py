@@ -11,9 +11,9 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-
-
 from .LadderPrice import LadderPrice
+
+
 
 
 class LadderOfferItem(BaseSchema):
@@ -24,10 +24,10 @@ class LadderOfferItem(BaseSchema):
     
     min_quantity = fields.Int(required=False)
     
-    margin = fields.Int(required=False)
-    
     max_quantity = fields.Int(required=False)
     
     price = fields.Nested(LadderPrice, required=False)
+    
+    margin = fields.Int(required=False)
     
 
