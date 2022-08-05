@@ -7,15 +7,6 @@ from ..models.BaseSchema import BaseSchema
 
 class CatalogValidator:
     
-    class deleteSearchKeywords(BaseSchema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
     class getSearchKeywords(BaseSchema):
         
         company_id = fields.Str(required=False)
@@ -26,6 +17,15 @@ class CatalogValidator:
          
     
     class updateSearchKeywords(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class deleteSearchKeywords(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -48,15 +48,6 @@ class CatalogValidator:
         application_id = fields.Str(required=False)
          
     
-    class deleteAutocompleteKeyword(BaseSchema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
     class getAutocompleteKeywordDetail(BaseSchema):
         
         company_id = fields.Str(required=False)
@@ -67,6 +58,15 @@ class CatalogValidator:
          
     
     class updateAutocompleteKeyword(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class deleteAutocompleteKeyword(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -197,7 +197,7 @@ class CatalogValidator:
         config_type = fields.Str(required=False)
          
     
-    class deleteGroupConfiguration(BaseSchema):
+    class updateGroupConfiguration(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -208,7 +208,7 @@ class CatalogValidator:
         group_slug = fields.Str(required=False)
          
     
-    class updateGroupConfiguration(BaseSchema):
+    class deleteGroupConfiguration(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -243,7 +243,7 @@ class CatalogValidator:
         config_type = fields.Str(required=False)
          
     
-    class deleteListingConfiguration(BaseSchema):
+    class updateListingConfiguration(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -254,7 +254,7 @@ class CatalogValidator:
         config_id = fields.Str(required=False)
          
     
-    class updateListingConfiguration(BaseSchema):
+    class deleteListingConfiguration(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -362,7 +362,7 @@ class CatalogValidator:
         slug = fields.Str(required=False)
          
     
-    class deleteCollection(BaseSchema):
+    class updateCollection(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -371,7 +371,7 @@ class CatalogValidator:
         id = fields.Str(required=False)
          
     
-    class updateCollection(BaseSchema):
+    class deleteCollection(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -629,13 +629,6 @@ class CatalogValidator:
         filter = fields.Boolean(required=False)
          
     
-    class deleteProduct(BaseSchema):
-        
-        company_id = fields.Str(required=False)
-        
-        item_id = fields.Int(required=False)
-         
-    
     class getProduct(BaseSchema):
         
         item_code = fields.Str(required=False)
@@ -648,6 +641,13 @@ class CatalogValidator:
          
     
     class editProduct(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        item_id = fields.Int(required=False)
+         
+    
+    class deleteProduct(BaseSchema):
         
         company_id = fields.Str(required=False)
         

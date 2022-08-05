@@ -16,10 +16,10 @@ class CategoryMapping(BaseSchema):
     # Catalog swagger.json
 
     
-    facebook = fields.Nested(CategoryMappingValues, required=False)
+    ajio = fields.Nested(CategoryMappingValues, required=False)
     
     google = fields.Nested(CategoryMappingValues, required=False)
     
-    ajio = fields.Nested(CategoryMappingValues, required=False)
+    facebook = fields.Nested(CategoryMappingValues, required=False)
     
 

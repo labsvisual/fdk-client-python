@@ -16,9 +16,9 @@ class CollectionQuery(BaseSchema):
     # Catalog swagger.json
 
     
-    op = fields.Str(required=False)
-    
     value = fields.List(fields.Raw(required=False), required=False)
+    
+    op = fields.Str(required=False)
     
     attribute = fields.Str(required=False)
     

@@ -16,9 +16,9 @@ class GTIN(BaseSchema):
     # Catalog swagger.json
 
     
-    gtin_value = fields.Str(required=False)
-    
     gtin_type = fields.Str(required=False)
+    
+    gtin_value = fields.Str(required=False)
     
     primary = fields.Boolean(required=False)
     
