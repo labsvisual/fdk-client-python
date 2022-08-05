@@ -14,8 +14,8 @@ class CategoryInfo(BaseSchema):
     # Cart swagger.json
 
     
-    uid = fields.Int(required=False)
-    
     name = fields.Str(required=False)
+    
+    uid = fields.Int(required=False)
     
 

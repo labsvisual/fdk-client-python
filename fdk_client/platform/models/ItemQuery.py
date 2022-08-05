@@ -16,10 +16,10 @@ class ItemQuery(BaseSchema):
     # Catalog swagger.json
 
     
-    uid = fields.Int(required=False)
-    
     item_code = fields.Str(required=False)
     
     brand_uid = fields.Int(required=False)
+    
+    uid = fields.Int(required=False)
     
 

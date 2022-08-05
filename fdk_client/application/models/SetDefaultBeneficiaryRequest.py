@@ -14,8 +14,8 @@ class SetDefaultBeneficiaryRequest(BaseSchema):
     # Payment swagger.json
 
     
-    beneficiary_id = fields.Str(required=False)
-    
     order_id = fields.Str(required=False)
+    
+    beneficiary_id = fields.Str(required=False)
     
 

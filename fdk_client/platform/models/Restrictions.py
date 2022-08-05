@@ -11,13 +11,13 @@ from .PriceRange import PriceRange
 
 
 
-from .BulkBundleRestriction import BulkBundleRestriction
+from .UsesRestriction import UsesRestriction
 
 from .PostOrder import PostOrder
 
-from .UsesRestriction import UsesRestriction
 
 
+from .BulkBundleRestriction import BulkBundleRestriction
 
 
 
@@ -34,16 +34,16 @@ class Restrictions(BaseSchema):
     
     ordering_stores = fields.List(fields.Int(required=False), required=False)
     
-    bulk_bundle = fields.Nested(BulkBundleRestriction, required=False)
+    uses = fields.Nested(UsesRestriction, required=False)
     
     post_order = fields.Nested(PostOrder, required=False)
     
-    uses = fields.Nested(UsesRestriction, required=False)
+    payments = fields.Dict(required=False)
+    
+    bulk_bundle = fields.Nested(BulkBundleRestriction, required=False)
     
     user_groups = fields.List(fields.Int(required=False), required=False)
     
     platforms = fields.List(fields.Str(required=False), required=False)
-    
-    payments = fields.Dict(required=False)
     
 

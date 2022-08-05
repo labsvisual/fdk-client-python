@@ -16,9 +16,9 @@ class CatalogInsightItem(BaseSchema):
     # Catalog swagger.json
 
     
-    out_of_stock_count = fields.Int(required=False)
-    
     count = fields.Int(required=False)
+    
+    out_of_stock_count = fields.Int(required=False)
     
     sellable_count = fields.Int(required=False)
     

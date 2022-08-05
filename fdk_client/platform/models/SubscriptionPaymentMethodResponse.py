@@ -14,8 +14,8 @@ class SubscriptionPaymentMethodResponse(BaseSchema):
     # Payment swagger.json
 
     
-    success = fields.Boolean(required=False)
-    
     data = fields.List(fields.Dict(required=False), required=False)
+    
+    success = fields.Boolean(required=False)
     
 

@@ -16,9 +16,9 @@ class ReturnConfig1(BaseSchema):
     # Catalog swagger.json
 
     
-    unit = fields.Str(required=False)
-    
     time = fields.Int(required=False)
+    
+    unit = fields.Str(required=False)
     
     returnable = fields.Boolean(required=False)
     
