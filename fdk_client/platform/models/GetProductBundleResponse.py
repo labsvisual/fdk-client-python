@@ -30,13 +30,13 @@ class GetProductBundleResponse(BaseSchema):
     # Catalog swagger.json
 
     
-    slug = fields.Str(required=False)
+    page_visibility = fields.List(fields.Str(required=False), required=False)
     
     products = fields.List(fields.Nested(GetProducts, required=False), required=False)
     
-    meta = fields.Dict(required=False)
+    is_active = fields.Boolean(required=False)
     
-    same_store_assignment = fields.Boolean(required=False)
+    slug = fields.Str(required=False)
     
     name = fields.Str(required=False)
     
@@ -44,9 +44,9 @@ class GetProductBundleResponse(BaseSchema):
     
     logo = fields.Str(required=False)
     
-    is_active = fields.Boolean(required=False)
+    same_store_assignment = fields.Boolean(required=False)
     
-    page_visibility = fields.List(fields.Str(required=False), required=False)
+    meta = fields.Dict(required=False)
     
     company_id = fields.Int(required=False)
     

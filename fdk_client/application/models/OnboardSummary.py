@@ -16,10 +16,10 @@ class OnboardSummary(BaseSchema):
     # Payment swagger.json
 
     
-    status = fields.Boolean(required=False)
+    redirect_url = fields.Str(required=False)
     
     session = fields.Dict(required=False)
     
-    redirect_url = fields.Str(required=False)
+    status = fields.Boolean(required=False)
     
 

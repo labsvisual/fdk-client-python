@@ -14,8 +14,8 @@ class BrandMeta(BaseSchema):
     # Catalog swagger.json
 
     
-    id = fields.Int(required=False)
-    
     name = fields.Str(required=False)
+    
+    id = fields.Int(required=False)
     
 

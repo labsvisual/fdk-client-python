@@ -18,8 +18,8 @@ class PaymentConfirmationResponse(BaseSchema):
     
     message = fields.Str(required=False)
     
-    order_id = fields.Str(required=False)
-    
     success = fields.Boolean(required=False)
+    
+    order_id = fields.Str(required=False)
     
 
