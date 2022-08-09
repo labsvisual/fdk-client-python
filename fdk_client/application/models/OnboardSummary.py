@@ -18,8 +18,8 @@ class OnboardSummary(BaseSchema):
     
     redirect_url = fields.Str(required=False)
     
-    session = fields.Dict(required=False)
-    
     status = fields.Boolean(required=False)
+    
+    session = fields.Dict(required=False)
     
 

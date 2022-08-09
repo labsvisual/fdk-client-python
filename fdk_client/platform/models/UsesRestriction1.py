@@ -14,8 +14,8 @@ class UsesRestriction1(BaseSchema):
     # Cart swagger.json
 
     
-    maximum = fields.Nested(UsesRemaining1, required=False)
-    
     remaining = fields.Nested(UsesRemaining1, required=False)
+    
+    maximum = fields.Nested(UsesRemaining1, required=False)
     
 

@@ -14,8 +14,8 @@ class GetShareCartLinkRequest(BaseSchema):
     # Cart swagger.json
 
     
-    id = fields.Str(required=False)
-    
     meta = fields.Dict(required=False)
+    
+    id = fields.Str(required=False)
     
 

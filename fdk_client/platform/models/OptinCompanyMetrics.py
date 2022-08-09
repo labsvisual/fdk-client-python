@@ -18,8 +18,8 @@ class OptinCompanyMetrics(BaseSchema):
     
     brand = fields.Int(required=False)
     
-    company = fields.Str(required=False)
-    
     store = fields.Int(required=False)
+    
+    company = fields.Str(required=False)
     
 

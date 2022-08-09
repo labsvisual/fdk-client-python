@@ -26,20 +26,20 @@ class ErrorDescription(BaseSchema):
     # Payment swagger.json
 
     
-    msg = fields.Str(required=False)
-    
-    expired = fields.Boolean(required=False)
+    payment_transaction_id = fields.Str(required=False)
     
     merchant_order_id = fields.Str(required=False)
     
-    cancelled = fields.Boolean(required=False)
-    
-    merchant_name = fields.Str(required=False)
-    
     amount = fields.Float(required=False)
+    
+    msg = fields.Str(required=False)
     
     invalid_id = fields.Boolean(required=False)
     
-    payment_transaction_id = fields.Str(required=False)
+    merchant_name = fields.Str(required=False)
+    
+    cancelled = fields.Boolean(required=False)
+    
+    expired = fields.Boolean(required=False)
     
 

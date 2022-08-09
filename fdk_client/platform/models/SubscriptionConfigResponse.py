@@ -16,10 +16,10 @@ class SubscriptionConfigResponse(BaseSchema):
     # Payment swagger.json
 
     
+    config = fields.Dict(required=False)
+    
     aggregator = fields.Str(required=False)
     
     success = fields.Boolean(required=False)
-    
-    config = fields.Dict(required=False)
     
 
