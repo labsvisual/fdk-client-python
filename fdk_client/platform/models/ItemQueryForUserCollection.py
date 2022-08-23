@@ -14,8 +14,8 @@ class ItemQueryForUserCollection(BaseSchema):
     # Catalog swagger.json
 
     
-    action = fields.Str(required=False)
-    
     item_id = fields.Int(required=False)
+    
+    action = fields.Str(required=False)
     
 

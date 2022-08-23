@@ -16,10 +16,10 @@ class InventorySet(BaseSchema):
     # Catalog swagger.json
 
     
-    quantity = fields.Int(required=False)
+    name = fields.Str(required=False)
     
     size_distribution = fields.Nested(SizeDistribution, required=False)
     
-    name = fields.Str(required=False)
+    quantity = fields.Int(required=False)
     
 
