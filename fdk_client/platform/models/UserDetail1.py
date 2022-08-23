@@ -12,14 +12,14 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-class MediaMeta(BaseSchema):
-    # Feedback swagger.json
+class UserDetail1(BaseSchema):
+    # Catalog swagger.json
 
     
-    max_count = fields.Int(required=False)
+    user_id = fields.Str(required=False)
     
-    size = fields.Int(required=False)
+    full_name = fields.Str(required=False)
     
-    type = fields.Str(required=False)
+    username = fields.Str(required=False)
     
 

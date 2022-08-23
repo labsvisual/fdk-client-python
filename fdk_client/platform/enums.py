@@ -80,7 +80,6 @@ class TicketSourceEnum(Enum):
 
 
 
-
 class PageType(Enum):
     
     ABOUT_US = "about-us"
@@ -168,6 +167,8 @@ class PageType(Enum):
     CART_REVIEW = "cart-review"
     
     LOGIN = "login"
+    
+    REGISTER = "register"
     
     @classmethod
     async def is_valid(cls, value):

@@ -1205,6 +1205,7 @@ Success, the code is valid and returns a SignedUrl
  | beneficiaryDetails | Boolean? |  yes  |  |
  | canReturn | Boolean? |  yes  |  |
  | canBreak | HashMap<String,Any>? |  yes  |  |
+ | showDownloadInvoice | Boolean? |  yes  |  |
  | prices | [Prices](#Prices)? |  yes  |  |
  | needHelpUrl | String? |  yes  |  |
  | shipmentId | String? |  yes  |  |

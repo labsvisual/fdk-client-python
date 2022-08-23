@@ -26,12 +26,12 @@ class CreatePaymentLinkResponse(BaseSchema):
     
     success = fields.Boolean(required=False)
     
-    polling_timeout = fields.Int(required=False)
-    
-    message = fields.Str(required=False)
-    
     payment_link_id = fields.Str(required=False)
     
     status_code = fields.Int(required=False)
+    
+    polling_timeout = fields.Int(required=False)
+    
+    message = fields.Str(required=False)
     
 

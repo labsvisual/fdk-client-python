@@ -18,8 +18,8 @@ class SaveAddressResponse(BaseSchema):
     
     is_default_address = fields.Boolean(required=False)
     
-    success = fields.Boolean(required=False)
-    
     id = fields.Str(required=False)
+    
+    success = fields.Boolean(required=False)
     
 

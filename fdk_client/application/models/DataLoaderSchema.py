@@ -20,6 +20,8 @@ from ..models.BaseSchema import BaseSchema
 from .DataLoaderSourceSchema import DataLoaderSourceSchema
 
 
+
+
 class DataLoaderSchema(BaseSchema):
     # Content swagger.json
 
@@ -37,5 +39,7 @@ class DataLoaderSchema(BaseSchema):
     content = fields.Str(required=False)
     
     __source = fields.Nested(DataLoaderSourceSchema, required=False)
+    
+    _id = fields.Str(required=False)
     
 

@@ -25,6 +25,8 @@ from .TrackingDetails import TrackingDetails
 
 
 
+
+
 from .Prices import Prices
 
 
@@ -85,6 +87,8 @@ class Shipments(BaseSchema):
     can_return = fields.Boolean(required=False)
     
     can_break = fields.Dict(required=False)
+    
+    show_download_invoice = fields.Boolean(required=False)
     
     prices = fields.Nested(Prices, required=False)
     

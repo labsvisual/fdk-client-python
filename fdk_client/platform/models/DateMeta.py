@@ -11,7 +11,7 @@ from ..models.BaseSchema import BaseSchema
 
 
 class DateMeta(BaseSchema):
-    # Feedback swagger.json
+    # Content swagger.json
 
     
     created_on = fields.Str(required=False)

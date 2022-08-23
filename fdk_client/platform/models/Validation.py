@@ -16,9 +16,9 @@ class Validation(BaseSchema):
     # Cart swagger.json
 
     
-    anonymous = fields.Boolean(required=False)
-    
     user_registered_after = fields.Str(required=False)
+    
+    anonymous = fields.Boolean(required=False)
     
     app_id = fields.List(fields.Str(required=False), required=False)
     

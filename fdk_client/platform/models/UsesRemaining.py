@@ -18,8 +18,8 @@ class UsesRemaining(BaseSchema):
     
     user = fields.Int(required=False)
     
-    total = fields.Int(required=False)
-    
     app = fields.Int(required=False)
+    
+    total = fields.Int(required=False)
     
 

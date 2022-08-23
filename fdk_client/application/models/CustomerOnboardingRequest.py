@@ -26,9 +26,9 @@ class CustomerOnboardingRequest(BaseSchema):
     
     device = fields.Nested(DeviceDetails, required=False)
     
-    source = fields.Str(required=False)
-    
     aggregator = fields.Str(required=False)
+    
+    source = fields.Str(required=False)
     
     personal_info = fields.Nested(UserPersonalInfoInDetails, required=False)
     

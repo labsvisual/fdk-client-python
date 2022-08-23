@@ -10,12 +10,12 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-class DeviceMeta(BaseSchema):
-    # Feedback swagger.json
+class DepartmentCreateResponse(BaseSchema):
+    # Catalog swagger.json
 
     
-    app_version = fields.Str(required=False)
+    uid = fields.Int(required=False)
     
-    platform = fields.Str(required=False)
+    message = fields.Str(required=False)
     
 

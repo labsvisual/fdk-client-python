@@ -8,10 +8,10 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-class InsertResponse(BaseSchema):
-    # Feedback swagger.json
+class DepartmentCreateErrorResponse(BaseSchema):
+    # Catalog swagger.json
 
     
-    count = fields.Int(required=False)
+    error = fields.Str(required=False)
     
 

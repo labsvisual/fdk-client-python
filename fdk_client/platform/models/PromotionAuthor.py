@@ -14,8 +14,8 @@ class PromotionAuthor(BaseSchema):
     # Cart swagger.json
 
     
-    created_by = fields.Str(required=False)
-    
     modified_by = fields.Str(required=False)
+    
+    created_by = fields.Str(required=False)
     
 
