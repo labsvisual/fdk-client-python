@@ -5,17 +5,17 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-
-
 from .GlobalValidation import GlobalValidation
+
+
 
 
 class TemplateValidationData(BaseSchema):
     # Catalog swagger.json
 
     
-    template_validation = fields.Dict(required=False)
-    
     global_validation = fields.Nested(GlobalValidation, required=False)
+    
+    template_validation = fields.Dict(required=False)
     
 

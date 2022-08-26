@@ -18,12 +18,12 @@ class StoreDetail(BaseSchema):
     # Catalog swagger.json
 
     
-    name = fields.Str(required=False)
-    
     code = fields.Str(required=False)
     
-    id = fields.Int(required=False)
-    
     city = fields.Str(required=False)
+    
+    name = fields.Str(required=False)
+    
+    id = fields.Int(required=False)
     
 

@@ -18,8 +18,8 @@ class ProductListingActionPage(BaseSchema):
     
     params = fields.Dict(required=False)
     
-    type = fields.Str(required=False)
-    
     query = fields.Dict(required=False)
+    
+    type = fields.Str(required=False)
     
 
