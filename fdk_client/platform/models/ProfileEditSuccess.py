@@ -42,9 +42,9 @@ class ProfileEditSuccess(BaseSchema):
     
     user = fields.Nested(UserSchema, required=False)
     
-    resend_email_token = fields.Str(required=False)
-    
     register_token = fields.Str(required=False)
+    
+    resend_email_token = fields.Str(required=False)
     
     user_exists = fields.Boolean(required=False)
     

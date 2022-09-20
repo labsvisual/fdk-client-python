@@ -16,10 +16,10 @@ class CreateOrderUserPaymentMethods(BaseSchema):
     # Payment swagger.json
 
     
-    mode = fields.Str(required=False)
+    name = fields.Str(required=False)
     
     meta = fields.Nested(PaymentMethodsMeta, required=False)
     
-    name = fields.Str(required=False)
+    mode = fields.Str(required=False)
     
 

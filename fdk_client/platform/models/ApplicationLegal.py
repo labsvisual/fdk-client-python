@@ -13,6 +13,8 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 from .ApplicationLegalFAQ import ApplicationLegalFAQ
 
 
@@ -33,6 +35,8 @@ class ApplicationLegal(BaseSchema):
     policy = fields.Str(required=False)
     
     shipping = fields.Str(required=False)
+    
+    returns = fields.Str(required=False)
     
     faq = fields.List(fields.Nested(ApplicationLegalFAQ, required=False), required=False)
     

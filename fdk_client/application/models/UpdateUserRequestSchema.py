@@ -14,6 +14,8 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 class UpdateUserRequestSchema(BaseSchema):
     # User swagger.json
 
@@ -23,6 +25,8 @@ class UpdateUserRequestSchema(BaseSchema):
     last_name = fields.Str(required=False)
     
     gender = fields.Str(required=False)
+    
+    external_id = fields.Str(required=False)
     
     meta = fields.Dict(required=False)
     

@@ -13,9 +13,9 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 from .PayoutBankDetails import PayoutBankDetails
-
-
 
 
 class PayoutRequest(BaseSchema):
@@ -26,12 +26,12 @@ class PayoutRequest(BaseSchema):
     
     aggregator = fields.Str(required=False)
     
+    users = fields.Dict(required=False)
+    
     is_active = fields.Boolean(required=False)
     
     unique_external_id = fields.Str(required=False)
     
     bank_details = fields.Nested(PayoutBankDetails, required=False)
-    
-    users = fields.Dict(required=False)
     
 

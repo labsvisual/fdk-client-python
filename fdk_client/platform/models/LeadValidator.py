@@ -210,3 +210,8 @@ class LeadValidator:
         unique_name = fields.Str(required=False)
          
     
+    class getGeneralConfig(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+         
+    

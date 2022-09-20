@@ -16,9 +16,9 @@ class Media2(BaseSchema):
     # Catalog swagger.json
 
     
-    portrait = fields.Str(required=False)
-    
     logo = fields.Str(required=False)
+    
+    portrait = fields.Str(required=False)
     
     landscape = fields.Str(required=False)
     

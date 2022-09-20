@@ -14,8 +14,8 @@ class WalletOtpRequest(BaseSchema):
     # Payment swagger.json
 
     
-    mobile = fields.Str(required=False)
-    
     country_code = fields.Str(required=False)
+    
+    mobile = fields.Str(required=False)
     
 

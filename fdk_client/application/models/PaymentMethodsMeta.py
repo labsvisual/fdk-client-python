@@ -16,10 +16,10 @@ class PaymentMethodsMeta(BaseSchema):
     # Payment swagger.json
 
     
-    payment_identifier = fields.Str(required=False)
-    
     merchant_code = fields.Str(required=False)
     
     payment_gateway = fields.Str(required=False)
+    
+    payment_identifier = fields.Str(required=False)
     
 

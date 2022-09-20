@@ -28,11 +28,11 @@ class PayoutsResponse(BaseSchema):
     
     customers = fields.Dict(required=False)
     
-    more_attributes = fields.Dict(required=False)
-    
     is_active = fields.Boolean(required=False)
     
     is_default = fields.Boolean(required=False)
+    
+    more_attributes = fields.Dict(required=False)
     
     unique_transfer_no = fields.Dict(required=False)
     

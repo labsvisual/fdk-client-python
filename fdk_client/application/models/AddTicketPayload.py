@@ -16,6 +16,8 @@ from ..models.BaseSchema import BaseSchema
 from .TicketContent import TicketContent
 
 
+
+
 class AddTicketPayload(BaseSchema):
     # Lead swagger.json
 
@@ -29,5 +31,7 @@ class AddTicketPayload(BaseSchema):
     category = fields.Str(required=False)
     
     content = fields.Nested(TicketContent, required=False)
+    
+    _custom_json = fields.Dict(required=False)
     
 

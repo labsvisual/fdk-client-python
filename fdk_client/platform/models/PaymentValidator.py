@@ -98,7 +98,18 @@ class PaymentValidator:
         company_id = fields.Int(required=False)
          
     
-    class addBeneficiaryDetails(BaseSchema):
+    class getBankAccountDetailsOpenAPI(BaseSchema):
+        
+        order_id = fields.Str(required=False)
+        
+        request_hash = fields.Str(required=False)
+        
+        company_id = fields.Int(required=False)
+        
+        application_id = fields.Str(required=False)
+         
+    
+    class addRefundBankAccountUsingOTP(BaseSchema):
         
         company_id = fields.Int(required=False)
         

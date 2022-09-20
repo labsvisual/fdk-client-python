@@ -18,8 +18,8 @@ class ProductStockPriceV2(BaseSchema):
     
     marked = fields.Float(required=False)
     
-    effective = fields.Float(required=False)
-    
     currency = fields.Str(required=False)
+    
+    effective = fields.Float(required=False)
     
 

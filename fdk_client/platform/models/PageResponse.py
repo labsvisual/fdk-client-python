@@ -26,8 +26,8 @@ class PageResponse(BaseSchema):
     
     current = fields.Str(required=False)
     
-    size = fields.Int(required=False)
-    
     has_previous = fields.Boolean(required=False)
+    
+    size = fields.Int(required=False)
     
 

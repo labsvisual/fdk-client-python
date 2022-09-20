@@ -129,7 +129,10 @@ class PaymentValidator:
     
     class addRefundBankAccountUsingOTP(BaseSchema):
         
-        pass 
+        company_id = fields.Int(required=False)
+        
+        application_id = fields.Str(required=False)
+         
     
     class verifyOtpAndAddBeneficiaryForWallet(BaseSchema):
         

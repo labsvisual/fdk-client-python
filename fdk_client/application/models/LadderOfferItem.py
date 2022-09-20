@@ -20,9 +20,9 @@ class LadderOfferItem(BaseSchema):
     # Cart swagger.json
 
     
-    min_quantity = fields.Int(required=False)
-    
     margin = fields.Int(required=False)
+    
+    min_quantity = fields.Int(required=False)
     
     price = fields.Nested(LadderPrice, required=False)
     
