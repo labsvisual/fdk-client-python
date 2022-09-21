@@ -16,9 +16,9 @@ class SellerV2(BaseSchema):
     # Catalog swagger.json
 
     
-    name = fields.Str(required=False)
-    
     count = fields.Int(required=False)
+    
+    name = fields.Str(required=False)
     
     uid = fields.Int(required=False)
     
