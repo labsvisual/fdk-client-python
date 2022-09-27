@@ -18,12 +18,12 @@ class TaxSlab(BaseSchema):
     # Catalog swagger.json
 
     
-    threshold = fields.Float(required=False)
+    effective_date = fields.Str(required=False)
     
     rate = fields.Float(required=False)
     
-    cess = fields.Float(required=False)
+    threshold = fields.Float(required=False)
     
-    effective_date = fields.Str(required=False)
+    cess = fields.Float(required=False)
     
 

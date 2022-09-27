@@ -14,8 +14,8 @@ class CompanySocialAccounts(BaseSchema):
     # CompanyProfile swagger.json
 
     
-    url = fields.Str(required=False)
-    
     name = fields.Str(required=False)
+    
+    url = fields.Str(required=False)
     
 

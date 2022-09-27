@@ -2696,6 +2696,7 @@ class User:
             "loginWithOTP": "/service/application/user/authentication/v1.0/login/otp",
             "loginWithEmailAndPassword": "/service/application/user/authentication/v1.0/login/password",
             "sendResetPasswordEmail": "/service/application/user/authentication/v1.0/login/password/reset",
+            "sendResetPasswordMobile": "/service/application/user/authentication/v1.0/login/password/mobile/reset",
             "forgotPassword": "/service/application/user/authentication/v1.0/login/password/reset/forgot",
             "sendResetToken": "/service/application/user/authentication/v1.0/login/password/reset/token",
             "loginWithToken": "/service/application/user/authentication/v1.0/login/token",
@@ -2997,6 +2998,40 @@ class User:
             if not key.startswith("x-fp-"):
                 exclude_headers.append(key)
         return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(urlparse(self._urls["sendResetPasswordEmail"]).netloc, "post", await create_url_without_domain("/service/application/user/authentication/v1.0/login/password/reset", platform=platform), query_string, headers, body, exclude_headers=exclude_headers), data=body, cookies=self._conf.cookies)
+    
+    async def sendResetPasswordMobile(self, platform=None, body=""):
+        """Use this API to reset a password using the link sent on mobile.
+        :param platform : ID of the application : type string
+        """
+        payload = {}
+        
+        if platform:
+            payload["platform"] = platform
+        
+        # Parameter validation
+        schema = UserValidator.sendResetPasswordMobile()
+        schema.dump(schema.load(payload))
+        
+        # Body validation
+        from .models.SendResetPasswordMobileRequestSchema import SendResetPasswordMobileRequestSchema
+        schema = SendResetPasswordMobileRequestSchema()
+        schema.dump(schema.load(body))
+        
+
+        url_with_params = await create_url_with_params(api_url=self._urls["sendResetPasswordMobile"], proccessed_params="""{"required":[],"optional":[{"name":"platform","in":"query","description":"ID of the application","schema":{"type":"string","default":"Fynd"}}],"query":[{"name":"platform","in":"query","description":"ID of the application","schema":{"type":"string","default":"Fynd"}}],"headers":[],"path":[]}""", platform=platform)
+        query_string = await create_query_string(platform=platform)
+        headers = {
+            "Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()
+        }
+        if self._conf.locationDetails:
+            headers["x-location-detail"] = ujson.dumps(self._conf.locationDetails)
+        for h in self._conf.extraHeaders:
+            headers.update(h)
+        exclude_headers = []
+        for key, val in headers.items():
+            if not key.startswith("x-fp-"):
+                exclude_headers.append(key)
+        return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(urlparse(self._urls["sendResetPasswordMobile"]).netloc, "post", await create_url_without_domain("/service/application/user/authentication/v1.0/login/password/mobile/reset", platform=platform), query_string, headers, body, exclude_headers=exclude_headers), data=body, cookies=self._conf.cookies)
     
     async def forgotPassword(self, body=""):
         """Use this API to reset a password using the code sent on email or SMS.

@@ -7,11 +7,11 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-from .Media import Media
-
-
-
 from .ImageUrls import ImageUrls
+
+
+
+from .Media import Media
 
 
 class CategoryMetaResponse(BaseSchema):
@@ -20,10 +20,10 @@ class CategoryMetaResponse(BaseSchema):
     
     uid = fields.Int(required=False)
     
-    logo = fields.Nested(Media, required=False)
+    banners = fields.Nested(ImageUrls, required=False)
     
     name = fields.Str(required=False)
     
-    banners = fields.Nested(ImageUrls, required=False)
+    logo = fields.Nested(Media, required=False)
     
 

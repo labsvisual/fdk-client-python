@@ -22,8 +22,8 @@ class Logo(BaseSchema):
     
     secure_url = fields.Str(required=False)
     
-    aspect_ratio_f = fields.Int(required=False)
-    
     url = fields.Str(required=False)
+    
+    aspect_ratio_f = fields.Int(required=False)
     
 

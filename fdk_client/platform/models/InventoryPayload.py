@@ -26,12 +26,12 @@ class InventoryPayload(BaseSchema):
     
     store_id = fields.Int(required=False)
     
-    price_effective = fields.Float(required=False)
-    
     total_quantity = fields.Int(required=False)
     
-    price_marked = fields.Float(required=False)
+    price_effective = fields.Float(required=False)
     
     expiration_date = fields.Str(required=False)
+    
+    price_marked = fields.Float(required=False)
     
 
