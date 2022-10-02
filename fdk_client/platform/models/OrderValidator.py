@@ -52,6 +52,8 @@ class OrderValidator:
         
         lock_status = fields.Boolean(required=False)
         
+        user_id = fields.Str(required=False)
+        
         q = fields.Str(required=False)
         
         stage = fields.Str(required=False)
@@ -257,6 +259,8 @@ class OrderValidator:
         status = fields.Str(required=False)
         
         dp = fields.Str(required=False)
+        
+        user_id = fields.Str(required=False)
         
         filter_type = fields.Str(required=False)
          

@@ -14,8 +14,8 @@ class ListSizeGuide(BaseSchema):
     # Catalog swagger.json
 
     
-    items = fields.List(fields.Dict(required=False), required=False)
-    
     page = fields.Dict(required=False)
+    
+    items = fields.List(fields.Dict(required=False), required=False)
     
 

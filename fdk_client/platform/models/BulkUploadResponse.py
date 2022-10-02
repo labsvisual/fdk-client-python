@@ -1,4 +1,4 @@
-"""Application Models."""
+"""Platform Models."""
 
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
@@ -10,7 +10,7 @@ from ..models.BaseSchema import BaseSchema
 from .CopyFileTask import CopyFileTask
 
 
-class BulkResponse(BaseSchema):
+class BulkUploadResponse(BaseSchema):
     # FileStorage swagger.json
 
     

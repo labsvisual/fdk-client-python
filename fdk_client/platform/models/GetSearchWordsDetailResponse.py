@@ -5,17 +5,17 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-from .GetSearchWordsData import GetSearchWordsData
-
 from .Page import Page
+
+from .GetSearchWordsData import GetSearchWordsData
 
 
 class GetSearchWordsDetailResponse(BaseSchema):
     # Catalog swagger.json
 
     
-    items = fields.Nested(GetSearchWordsData, required=False)
-    
     page = fields.Nested(Page, required=False)
+    
+    items = fields.Nested(GetSearchWordsData, required=False)
     
 

@@ -16,9 +16,9 @@ class Meta(BaseSchema):
     # Catalog swagger.json
 
     
-    headers = fields.Dict(required=False)
-    
     unit = fields.Str(required=False)
+    
+    headers = fields.Dict(required=False)
     
     values = fields.List(fields.Dict(required=False), required=False)
     

@@ -24,10 +24,10 @@ class CompareObject(BaseSchema):
     
     equals = fields.Float(required=False)
     
-    greater_than = fields.Float(required=False)
-    
     greater_than_equals = fields.Float(required=False)
     
     less_than_equals = fields.Float(required=False)
+    
+    greater_than = fields.Float(required=False)
     
 

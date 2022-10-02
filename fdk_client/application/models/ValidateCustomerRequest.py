@@ -20,11 +20,11 @@ class ValidateCustomerRequest(BaseSchema):
     # Payment swagger.json
 
     
-    payload = fields.Str(required=False)
-    
     aggregator = fields.Str(required=False)
     
     merchant_params = fields.Dict(required=False)
+    
+    payload = fields.Str(required=False)
     
     transaction_amount_in_paise = fields.Int(required=False)
     

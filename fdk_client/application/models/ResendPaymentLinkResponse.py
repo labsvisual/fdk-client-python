@@ -22,8 +22,8 @@ class ResendPaymentLinkResponse(BaseSchema):
     
     success = fields.Boolean(required=False)
     
-    status_code = fields.Int(required=False)
-    
     message = fields.Str(required=False)
+    
+    status_code = fields.Int(required=False)
     
 
