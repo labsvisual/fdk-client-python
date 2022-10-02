@@ -698,18 +698,18 @@ class CatalogValidator:
         company_id = fields.Int(required=False)
          
     
-    class createProductsInBulk(BaseSchema):
-        
-        company_id = fields.Int(required=False)
-        
-        batch_id = fields.Str(required=False)
-         
-    
     class deleteProductBulkJob(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         batch_id = fields.Int(required=False)
+         
+    
+    class createProductsInBulk(BaseSchema):
+        
+        company_id = fields.Int(required=False)
+        
+        batch_id = fields.Str(required=False)
          
     
     class getProductTags(BaseSchema):
@@ -827,16 +827,16 @@ class CatalogValidator:
         company_id = fields.Int(required=False)
          
     
-    class createBulkInventory(BaseSchema):
+    class deleteBulkInventoryJob(BaseSchema):
         
-        company_id = fields.Int(required=False)
+        company_id = fields.Str(required=False)
         
         batch_id = fields.Str(required=False)
          
     
-    class deleteBulkInventoryJob(BaseSchema):
+    class createBulkInventory(BaseSchema):
         
-        company_id = fields.Str(required=False)
+        company_id = fields.Int(required=False)
         
         batch_id = fields.Str(required=False)
          
@@ -858,7 +858,7 @@ class CatalogValidator:
         filter_type = fields.Str(required=False)
          
     
-    class updateRealtimeInventory(BaseSchema):
+    class deleteRealtimeInventory(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -867,7 +867,7 @@ class CatalogValidator:
         seller_identifier = fields.Str(required=False)
          
     
-    class deleteRealtimeInventory(BaseSchema):
+    class updateRealtimeInventory(BaseSchema):
         
         company_id = fields.Str(required=False)
         

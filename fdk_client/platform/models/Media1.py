@@ -18,8 +18,8 @@ class Media1(BaseSchema):
     
     url = fields.Str(required=False)
     
-    meta = fields.Dict(required=False)
-    
     type = fields.Str(required=False)
+    
+    meta = fields.Dict(required=False)
     
 

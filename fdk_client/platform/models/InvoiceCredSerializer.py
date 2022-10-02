@@ -18,8 +18,8 @@ class InvoiceCredSerializer(BaseSchema):
     
     password = fields.Str(required=False)
     
-    username = fields.Str(required=False)
-    
     enabled = fields.Boolean(required=False)
+    
+    username = fields.Str(required=False)
     
 
