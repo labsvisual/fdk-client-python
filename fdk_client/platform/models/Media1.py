@@ -16,9 +16,9 @@ class Media1(BaseSchema):
     # Catalog swagger.json
 
     
-    url = fields.Str(required=False)
-    
     type = fields.Str(required=False)
+    
+    url = fields.Str(required=False)
     
     meta = fields.Dict(required=False)
     

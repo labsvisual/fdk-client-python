@@ -20,9 +20,9 @@ class AssignStoreArticle(BaseSchema):
     # Catalog swagger.json
 
     
-    quantity = fields.Int(required=False)
-    
     group_id = fields.Str(required=False)
+    
+    quantity = fields.Int(required=False)
     
     article_assignment = fields.Nested(ArticleAssignment, required=False)
     
