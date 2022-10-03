@@ -30,7 +30,7 @@ class StoreAddressSerializer(BaseSchema):
     
     address1 = fields.Str(required=False)
     
-    landmark = fields.Str(required=False)
+    pincode = fields.Int(required=False)
     
     country = fields.Str(required=False)
     
@@ -40,10 +40,10 @@ class StoreAddressSerializer(BaseSchema):
     
     longitude = fields.Float(required=False)
     
+    city = fields.Str(required=False)
+    
     state = fields.Str(required=False)
     
-    pincode = fields.Int(required=False)
-    
-    city = fields.Str(required=False)
+    landmark = fields.Str(required=False)
     
 

@@ -18,11 +18,11 @@ class Size(BaseSchema):
     # Catalog swagger.json
 
     
-    quantity = fields.Int(required=False)
-    
     display = fields.Raw(required=False)
     
     is_available = fields.Boolean(required=False)
+    
+    quantity = fields.Int(required=False)
     
     value = fields.Raw(required=False)
     

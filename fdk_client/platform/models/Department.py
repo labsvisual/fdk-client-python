@@ -20,14 +20,14 @@ class Department(BaseSchema):
     # Catalog swagger.json
 
     
-    priority_order = fields.Int(required=False)
+    slug = fields.Str(required=False)
     
     logo = fields.Nested(Media, required=False)
     
-    name = fields.Str(required=False)
+    priority_order = fields.Int(required=False)
     
     uid = fields.Int(required=False)
     
-    slug = fields.Str(required=False)
+    name = fields.Str(required=False)
     
 

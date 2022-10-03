@@ -18,8 +18,8 @@ class WeightResponse(BaseSchema):
     
     unit = fields.Str(required=False)
     
-    is_default = fields.Boolean(required=False)
-    
     shipping = fields.Float(required=False)
+    
+    is_default = fields.Boolean(required=False)
     
 

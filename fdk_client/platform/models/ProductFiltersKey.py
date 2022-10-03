@@ -22,12 +22,12 @@ class ProductFiltersKey(BaseSchema):
     
     operators = fields.List(fields.Str(required=False), required=False)
     
-    kind = fields.Str(required=False)
-    
     logo = fields.Str(required=False)
     
-    name = fields.Str(required=False)
-    
     display = fields.Str(required=False)
+    
+    kind = fields.Str(required=False)
+    
+    name = fields.Str(required=False)
     
 
