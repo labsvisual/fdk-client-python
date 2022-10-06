@@ -16,9 +16,9 @@ class CompanyBrandPostRequestSerializer(BaseSchema):
     # CompanyProfile swagger.json
 
     
-    brands = fields.List(fields.Int(required=False), required=False)
-    
     uid = fields.Int(required=False)
+    
+    brands = fields.List(fields.Int(required=False), required=False)
     
     company = fields.Int(required=False)
     

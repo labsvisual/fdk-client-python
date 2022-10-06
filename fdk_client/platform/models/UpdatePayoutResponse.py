@@ -18,8 +18,8 @@ class UpdatePayoutResponse(BaseSchema):
     
     is_default = fields.Boolean(required=False)
     
-    success = fields.Boolean(required=False)
-    
     is_active = fields.Boolean(required=False)
+    
+    success = fields.Boolean(required=False)
     
 

@@ -14,8 +14,8 @@ class PostOrder1(BaseSchema):
     # Cart swagger.json
 
     
-    cancellation_allowed = fields.Boolean(required=False)
-    
     return_allowed = fields.Boolean(required=False)
+    
+    cancellation_allowed = fields.Boolean(required=False)
     
 

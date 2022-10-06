@@ -70,6 +70,8 @@ class CompanyProfileValidator:
         page_no = fields.Int(required=False)
         
         page_size = fields.Int(required=False)
+        
+        location_ids = fields.List(fields.Int(required=False), required=False)
          
     
     class createLocation(BaseSchema):

@@ -18,8 +18,8 @@ class Validation(BaseSchema):
     
     app_id = fields.List(fields.Str(required=False), required=False)
     
-    anonymous = fields.Boolean(required=False)
-    
     user_registered_after = fields.Str(required=False)
+    
+    anonymous = fields.Boolean(required=False)
     
 

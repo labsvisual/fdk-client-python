@@ -14,8 +14,8 @@ class CartDeliveryModesResponse(BaseSchema):
     # PosCart swagger.json
 
     
-    pickup_stores = fields.List(fields.Int(required=False), required=False)
-    
     available_modes = fields.List(fields.Str(required=False), required=False)
+    
+    pickup_stores = fields.List(fields.Int(required=False), required=False)
     
 

@@ -30,24 +30,24 @@ class PollingPaymentLinkResponse(BaseSchema):
     # Payment swagger.json
 
     
-    order_id = fields.Str(required=False)
+    status = fields.Str(required=False)
     
-    amount = fields.Float(required=False)
+    status_code = fields.Int(required=False)
     
     aggregator_name = fields.Str(required=False)
     
-    success = fields.Boolean(required=False)
+    amount = fields.Float(required=False)
     
-    payment_link_id = fields.Str(required=False)
-    
-    status = fields.Str(required=False)
-    
-    message = fields.Str(required=False)
-    
-    http_status = fields.Int(required=False)
+    order_id = fields.Str(required=False)
     
     redirect_url = fields.Str(required=False)
     
-    status_code = fields.Int(required=False)
+    success = fields.Boolean(required=False)
+    
+    message = fields.Str(required=False)
+    
+    payment_link_id = fields.Str(required=False)
+    
+    http_status = fields.Int(required=False)
     
 

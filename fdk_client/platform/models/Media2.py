@@ -18,8 +18,8 @@ class Media2(BaseSchema):
     
     logo = fields.Str(required=False)
     
-    landscape = fields.Str(required=False)
-    
     portrait = fields.Str(required=False)
+    
+    landscape = fields.Str(required=False)
     
 

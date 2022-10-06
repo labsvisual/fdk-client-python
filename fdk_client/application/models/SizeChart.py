@@ -9,6 +9,8 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+
+
 from .SizeChartValues import SizeChartValues
 
 
@@ -18,13 +20,13 @@ from .ColumnHeaders import ColumnHeaders
 
 
 
-
-
 class SizeChart(BaseSchema):
     # Catalog swagger.json
 
     
-    unit = fields.Str(required=False)
+    title = fields.Str(required=False)
+    
+    description = fields.Str(required=False)
     
     image = fields.Str(required=False)
     
@@ -34,8 +36,6 @@ class SizeChart(BaseSchema):
     
     headers = fields.Nested(ColumnHeaders, required=False)
     
-    description = fields.Str(required=False)
-    
-    title = fields.Str(required=False)
+    unit = fields.Str(required=False)
     
 
