@@ -2705,6 +2705,7 @@ class User:
             "verifyMobile": "/service/application/user/authentication/v1.0/verify/mobile",
             "hasPassword": "/service/application/user/authentication/v1.0/has-password",
             "updatePassword": "/service/application/user/authentication/v1.0/password",
+            "deleteUser": "/service/application/user/authentication/v1.0/delete",
             "logout": "/service/application/user/authentication/v1.0/logout",
             "sendOTPOnMobile": "/service/application/user/authentication/v1.0/otp/mobile/send",
             "verifyMobileOTP": "/service/application/user/authentication/v1.0/otp/mobile/verify",
@@ -3271,6 +3272,36 @@ class User:
             if not key.startswith("x-fp-"):
                 exclude_headers.append(key)
         return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(urlparse(self._urls["updatePassword"]).netloc, "post", await create_url_without_domain("/service/application/user/authentication/v1.0/password", ), query_string, headers, body, exclude_headers=exclude_headers), data=body, cookies=self._conf.cookies)
+    
+    async def deleteUser(self, body=""):
+        """verify otp and delete user
+        """
+        payload = {}
+        
+        # Parameter validation
+        schema = UserValidator.deleteUser()
+        schema.dump(schema.load(payload))
+        
+        # Body validation
+        from .models.DeleteApplicationUserRequestSchema import DeleteApplicationUserRequestSchema
+        schema = DeleteApplicationUserRequestSchema()
+        schema.dump(schema.load(body))
+        
+
+        url_with_params = await create_url_with_params(api_url=self._urls["deleteUser"], proccessed_params="""{"required":[],"optional":[],"query":[],"headers":[],"path":[]}""", )
+        query_string = await create_query_string()
+        headers = {
+            "Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()
+        }
+        if self._conf.locationDetails:
+            headers["x-location-detail"] = ujson.dumps(self._conf.locationDetails)
+        for h in self._conf.extraHeaders:
+            headers.update(h)
+        exclude_headers = []
+        for key, val in headers.items():
+            if not key.startswith("x-fp-"):
+                exclude_headers.append(key)
+        return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(urlparse(self._urls["deleteUser"]).netloc, "post", await create_url_without_domain("/service/application/user/authentication/v1.0/delete", ), query_string, headers, body, exclude_headers=exclude_headers), data=body, cookies=self._conf.cookies)
     
     async def logout(self, body=""):
         """Use this API to check to logout a user from the app.

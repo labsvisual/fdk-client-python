@@ -18,8 +18,8 @@ class CartItem(BaseSchema):
     
     product_id = fields.Str(required=False)
     
-    quantity = fields.Int(required=False)
-    
     size = fields.Str(required=False)
+    
+    quantity = fields.Int(required=False)
     
 

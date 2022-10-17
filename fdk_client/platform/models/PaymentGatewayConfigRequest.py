@@ -18,8 +18,8 @@ class PaymentGatewayConfigRequest(BaseSchema):
     
     aggregator_name = fields.Nested(PaymentGatewayConfig, required=False)
     
-    is_active = fields.Boolean(required=False)
-    
     app_id = fields.Str(required=False)
+    
+    is_active = fields.Boolean(required=False)
     
 

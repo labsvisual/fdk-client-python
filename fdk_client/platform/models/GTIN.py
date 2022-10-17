@@ -18,8 +18,8 @@ class GTIN(BaseSchema):
     
     primary = fields.Boolean(required=False)
     
-    gtin_value = fields.Str(required=False)
-    
     gtin_type = fields.Str(required=False)
+    
+    gtin_value = fields.Str(required=False)
     
 

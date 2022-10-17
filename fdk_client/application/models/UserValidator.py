@@ -84,6 +84,10 @@ class UserValidator:
         
         pass 
     
+    class deleteUser(BaseSchema):
+        
+        pass 
+    
     class logout(BaseSchema):
         
         pass 

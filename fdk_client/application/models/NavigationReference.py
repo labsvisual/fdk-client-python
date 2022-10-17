@@ -48,6 +48,6 @@ class NavigationReference(BaseSchema):
     
     sort_order = fields.Int(required=False)
     
-    sub_navigation = fields.List(fields.Nested(lambda: NavigationReference(exclude=('sub_navigation')), required=False), required=False)
+    sub_navigation = fields.List(fields.Raw(required=False), required=False)
     
 
