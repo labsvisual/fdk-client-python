@@ -5,17 +5,17 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-from .CurrencyInfo import CurrencyInfo
-
 from .LadderPriceOffer import LadderPriceOffer
+
+from .CurrencyInfo import CurrencyInfo
 
 
 class LadderPriceOffers(BaseSchema):
     # Cart swagger.json
 
     
-    currency = fields.Nested(CurrencyInfo, required=False)
-    
     available_offers = fields.List(fields.Nested(LadderPriceOffer, required=False), required=False)
+    
+    currency = fields.Nested(CurrencyInfo, required=False)
     
 

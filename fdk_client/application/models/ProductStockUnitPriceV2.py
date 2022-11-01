@@ -14,24 +14,16 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+class ProductStockUnitPriceV2(BaseSchema):
+    # Catalog swagger.json
 
-
-
-
-class DisplayBreakup(BaseSchema):
-    # Cart swagger.json
-
-    
-    display = fields.Str(required=False)
-    
-    key = fields.Str(required=False)
-    
-    message = fields.List(fields.Str(required=False), required=False)
-    
-    value = fields.Float(required=False)
     
     currency_symbol = fields.Str(required=False)
     
+    unit = fields.Str(required=False)
+    
     currency_code = fields.Str(required=False)
+    
+    price = fields.Float(required=False)
     
 

@@ -24,7 +24,7 @@ class SizeChart(BaseSchema):
     # Catalog swagger.json
 
     
-    description = fields.Str(required=False)
+    unit = fields.Str(required=False)
     
     headers = fields.Nested(ColumnHeaders, required=False)
     
@@ -34,8 +34,8 @@ class SizeChart(BaseSchema):
     
     title = fields.Str(required=False)
     
-    size_tip = fields.Str(required=False)
+    description = fields.Str(required=False)
     
-    unit = fields.Str(required=False)
+    size_tip = fields.Str(required=False)
     
 

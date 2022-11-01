@@ -34,13 +34,6 @@ class CatalogValidator:
         slug = fields.Str(required=False)
          
     
-    class getProductSimilarByIdentifier(BaseSchema):
-        
-        slug = fields.Str(required=False)
-        
-        similar_type = fields.Str(required=False)
-         
-    
     class getProductVariantsBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
@@ -167,14 +160,14 @@ class CatalogValidator:
         page_size = fields.Int(required=False)
          
     
-    class followById(BaseSchema):
+    class unfollowById(BaseSchema):
         
         collection_type = fields.Str(required=False)
         
         collection_id = fields.Str(required=False)
          
     
-    class unfollowById(BaseSchema):
+    class followById(BaseSchema):
         
         collection_type = fields.Str(required=False)
         

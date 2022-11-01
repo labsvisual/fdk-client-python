@@ -20,10 +20,10 @@ class CartMetaRequest(BaseSchema):
     
     pick_up_customer_details = fields.Dict(required=False)
     
-    checkout_mode = fields.Str(required=False)
-    
     gstin = fields.Str(required=False)
     
     comment = fields.Str(required=False)
+    
+    checkout_mode = fields.Str(required=False)
     
 

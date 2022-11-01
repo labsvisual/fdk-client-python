@@ -18,8 +18,8 @@ class IfscCodeResponse(BaseSchema):
     
     bank_name = fields.Str(required=False)
     
-    success = fields.Boolean(required=False)
-    
     branch_name = fields.Str(required=False)
+    
+    success = fields.Boolean(required=False)
     
 
