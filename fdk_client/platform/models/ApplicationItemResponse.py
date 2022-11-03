@@ -7,19 +7,19 @@ from ..models.BaseSchema import BaseSchema
 
 
 
+from .SEO import SEO
+
+from .MOQ import MOQ
 
 
-
-
-
-class UserSerializer1(BaseSchema):
+class ApplicationItemResponse(BaseSchema):
     # Catalog swagger.json
 
     
-    username = fields.Str(required=False)
+    alt_text = fields.Dict(required=False)
     
-    user_id = fields.Str(required=False)
+    seo = fields.Nested(SEO, required=False)
     
-    contact = fields.Str(required=False)
+    moq = fields.Nested(MOQ, required=False)
     
 

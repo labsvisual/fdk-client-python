@@ -22,8 +22,8 @@ class BulkProductRequest(BaseSchema):
     
     company_id = fields.Int(required=False)
     
-    data = fields.List(fields.Dict(required=False), required=False)
-    
     batch_id = fields.Str(required=False)
+    
+    data = fields.List(fields.Dict(required=False), required=False)
     
 

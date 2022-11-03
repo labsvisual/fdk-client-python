@@ -28,10 +28,10 @@ class OptInPostRequest(BaseSchema):
     
     brand_ids = fields.List(fields.Int(required=False), required=False)
     
-    company_id = fields.Int(required=False)
+    enabled = fields.Boolean(required=False)
     
     opt_level = fields.Str(required=False)
     
-    enabled = fields.Boolean(required=False)
+    company_id = fields.Int(required=False)
     
 

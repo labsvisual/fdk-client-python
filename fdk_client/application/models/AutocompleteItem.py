@@ -5,6 +5,10 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
+from .ProductListingAction import ProductListingAction
+
+
+
 
 
 
@@ -12,22 +16,18 @@ from ..models.BaseSchema import BaseSchema
 from .Media import Media
 
 
-
-from .ProductListingAction import ProductListingAction
-
-
 class AutocompleteItem(BaseSchema):
     # Catalog swagger.json
 
+    
+    action = fields.Nested(ProductListingAction, required=False)
+    
+    _custom_json = fields.Dict(required=False)
     
     type = fields.Str(required=False)
     
     display = fields.Str(required=False)
     
     logo = fields.Nested(Media, required=False)
-    
-    _custom_json = fields.Dict(required=False)
-    
-    action = fields.Nested(ProductListingAction, required=False)
     
 

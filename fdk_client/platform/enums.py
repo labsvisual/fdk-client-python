@@ -170,6 +170,10 @@ class PageType(Enum):
     
     REGISTER = "register"
     
+    SHIPPING_POLICY = "shipping-policy"
+    
+    RETURN_POLICY = "return-policy"
+    
     @classmethod
     async def is_valid(cls, value):
         if value in cls._value2member_map_:

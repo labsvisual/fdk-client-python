@@ -12,14 +12,14 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-class OrderQuantity(BaseSchema):
+class MOQ(BaseSchema):
     # Catalog swagger.json
 
     
-    maximum = fields.Int(required=False)
-    
-    is_set = fields.Boolean(required=False)
+    increment_unit = fields.Int(required=False)
     
     minimum = fields.Int(required=False)
+    
+    maximum = fields.Int(required=False)
     
 

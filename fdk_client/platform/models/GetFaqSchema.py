@@ -5,13 +5,13 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-
+from .FaqSchema import FaqSchema
 
 
 class GetFaqSchema(BaseSchema):
     # Content swagger.json
 
     
-    faqs = fields.List(fields.Dict(required=False), required=False)
+    faqs = fields.List(fields.Nested(FaqSchema, required=False), required=False)
     
 

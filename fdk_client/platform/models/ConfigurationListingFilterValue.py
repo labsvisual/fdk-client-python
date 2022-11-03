@@ -22,15 +22,15 @@ class ConfigurationListingFilterValue(BaseSchema):
     # Catalog swagger.json
 
     
-    map_values = fields.List(fields.Dict(required=False), required=False)
-    
     condition = fields.Str(required=False)
-    
-    value = fields.Str(required=False)
     
     sort = fields.Str(required=False)
     
+    map_values = fields.List(fields.Dict(required=False), required=False)
+    
     map = fields.Dict(required=False)
+    
+    value = fields.Str(required=False)
     
     bucket_points = fields.List(fields.Nested(ConfigurationBucketPoints, required=False), required=False)
     

@@ -14,8 +14,8 @@ class CategoryMappingValues(BaseSchema):
     # Catalog swagger.json
 
     
-    catalog_id = fields.Int(required=False)
-    
     name = fields.Str(required=False)
+    
+    catalog_id = fields.Int(required=False)
     
 
