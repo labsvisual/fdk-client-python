@@ -16,10 +16,10 @@ class ProductSizeDeleteDataResponse(BaseSchema):
     # Catalog swagger.json
 
     
+    item_id = fields.Int(required=False)
+    
     company_id = fields.Int(required=False)
     
     size = fields.Str(required=False)
-    
-    item_id = fields.Int(required=False)
     
 

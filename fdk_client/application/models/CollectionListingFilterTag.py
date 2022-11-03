@@ -16,9 +16,9 @@ class CollectionListingFilterTag(BaseSchema):
     # Catalog swagger.json
 
     
-    display = fields.Str(required=False)
-    
     is_selected = fields.Boolean(required=False)
+    
+    display = fields.Str(required=False)
     
     name = fields.Str(required=False)
     

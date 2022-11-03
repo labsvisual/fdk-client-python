@@ -22,6 +22,8 @@ class AttributeMaster(BaseSchema):
     # Catalog swagger.json
 
     
+    allowed_values = fields.List(fields.Str(required=False), required=False)
+    
     mandatory = fields.Boolean(required=False)
     
     multi = fields.Boolean(required=False)
@@ -29,8 +31,6 @@ class AttributeMaster(BaseSchema):
     type = fields.Str(required=False)
     
     format = fields.Str(required=False)
-    
-    allowed_values = fields.List(fields.Str(required=False), required=False)
     
     range = fields.Nested(AttributeSchemaRange, required=False)
     
