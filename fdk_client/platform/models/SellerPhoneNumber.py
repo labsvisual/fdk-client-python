@@ -14,8 +14,8 @@ class SellerPhoneNumber(BaseSchema):
     # Catalog swagger.json
 
     
-    number = fields.Str(required=False)
-    
     country_code = fields.Int(required=False)
+    
+    number = fields.Str(required=False)
     
 

@@ -20,7 +20,7 @@ class DimensionResponse(BaseSchema):
     # Catalog swagger.json
 
     
-    height = fields.Float(required=False)
+    length = fields.Float(required=False)
     
     is_default = fields.Boolean(required=False)
     
@@ -28,6 +28,6 @@ class DimensionResponse(BaseSchema):
     
     width = fields.Float(required=False)
     
-    length = fields.Float(required=False)
+    height = fields.Float(required=False)
     
 

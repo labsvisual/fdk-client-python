@@ -24,10 +24,10 @@ class Price(BaseSchema):
     
     max_effective = fields.Float(required=False)
     
+    max_marked = fields.Float(required=False)
+    
     min_marked = fields.Float(required=False)
     
     currency = fields.Str(required=False)
-    
-    max_marked = fields.Float(required=False)
     
 

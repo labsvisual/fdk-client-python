@@ -16,10 +16,10 @@ class Media(BaseSchema):
     # Catalog swagger.json
 
     
-    type = fields.Str(required=False)
+    url = fields.Str(required=False)
     
     aspect_ratio = fields.Str(required=False)
     
-    url = fields.Str(required=False)
+    type = fields.Str(required=False)
     
 

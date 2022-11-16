@@ -22,8 +22,8 @@ class GetCatalogConfigurationDetailsProduct(BaseSchema):
     
     detail = fields.Dict(required=False)
     
-    similar = fields.Dict(required=False)
-    
     compare = fields.Dict(required=False)
+    
+    similar = fields.Dict(required=False)
     
 

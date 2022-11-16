@@ -1404,7 +1404,6 @@ Successful operation
  | Properties | Type | Nullable | Description |
  | ---------- | ---- | -------- | ----------- |
  | required | Boolean? |  yes  |  |
- | mapping | HashMap<String,[PropBeanConfig](#PropBeanConfig)>? |  yes  |  |
  | optional | Boolean? |  yes  |  |
  | send | [Send](#Send)? |  yes  |  |
  | validations | ArrayList<HashMap<String,HashMap<String,Any>>>? |  yes  |  |

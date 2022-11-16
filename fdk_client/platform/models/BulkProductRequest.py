@@ -18,12 +18,12 @@ class BulkProductRequest(BaseSchema):
     # Catalog swagger.json
 
     
-    company_id = fields.Int(required=False)
-    
-    template_tag = fields.Str(required=False)
-    
     data = fields.List(fields.Dict(required=False), required=False)
     
     batch_id = fields.Str(required=False)
+    
+    company_id = fields.Int(required=False)
+    
+    template_tag = fields.Str(required=False)
     
 
