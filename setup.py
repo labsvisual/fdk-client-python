@@ -22,7 +22,7 @@ setup(
         exclude=('tests*', 'documentation', '_macros')),
     license='',
     install_requires=[
-        "aiohttp==3.7.4",
+        "aiohttp==3.8.3",
         "async-timeout==3.0.1",
         "attrs==21.2.0",
         "backcall==0.2.0",
